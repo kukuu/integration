@@ -52,6 +52,9 @@ Jitterbit is an integration platform that offers a low-code approach to building
 #### Postman:
 Postman is an API development and testing tool that can be useful for integration tasks. It allows you to make API requests, test endpoints, and inspect responses. It is particularly handy when working with RESTful APIs.
 
+#### Sandbox
+https://studio.apollographql.com/sandbox/explorer/
+
 #### Enterprise Service Bus (ESB) Tools:
 ESB tools like Apache ServiceMix, Oracle Service Bus, or Mule ESB provide a platform for integrating applications and services using a messaging backbone. They offer features such as routing, transformation, and orchestration.
 
