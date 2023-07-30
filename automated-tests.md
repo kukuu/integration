@@ -17,3 +17,14 @@ Let's assume you are working on a Node.js application with the following file st
     - app.e2e.test.js
 
 ```
+
+- Unit Tests:
+Unit tests focus on testing individual units of code in isolation, typically at the function or class level. We will use Jest as the testing framework for unit tests.
+
+Install Jest and create a test file for the calculator.js module:
+
+```
+npm install jest --save-dev
+
+```
+
