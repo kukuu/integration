@@ -101,6 +101,7 @@ Add the following scripts to your package.json:
   "test:e2e": "jest test/e2e"
 }
 
+```
 Now you can run the tests:
 
 ```
@@ -109,5 +110,5 @@ npm run test:unit          // Run unit tests
 npm run test:integration   // Run integration tests
 npm run test:e2e           // Run end-to-end tests
 
-```
+
 ```
