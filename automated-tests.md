@@ -4,7 +4,7 @@ In this article, I have provided a comprehensive suite of automated tests, inclu
 
 Let's assume you are working on a Node.js application with the following file structure:
 
-
+```
 - src/
   - app.js
   - calculator.js
@@ -15,7 +15,5 @@ Let's assume you are working on a Node.js application with the following file st
     - app.test.js
   - e2e/
     - app.e2e.test.js
-```
-
 
 ```
