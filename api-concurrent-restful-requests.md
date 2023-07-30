@@ -3,7 +3,7 @@
 In this example, we use Axios to send GET requests to multiple API endpoints concurrently. The Promise.all() method takes an array of promises (in this case, Axios request promises) and waits for all of them to be resolved. It returns an array of responses corresponding to each promise.
 To make concurrent Axios API requests in JavaScript, you can use Promise.all() to handle multiple asynchronous calls simultaneously. Here's an example of how you can achieve this:
 
-
+```
 const axios = require('axios');
 
 // Function to make concurrent API requests using Axios
@@ -38,3 +38,5 @@ async function makeConcurrentRequests() {
 
 // Call the function to make concurrent requests
 makeConcurrentRequests();
+
+```
