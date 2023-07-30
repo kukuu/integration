@@ -44,6 +44,7 @@ test('subtracts two numbers correctly', () => {
 });
 
 ```
+Example project: HMRC Payment Gateway - https://github.com/kukuu/HMRC-payment-gateway/tree/main/cinema-tickets-javascript
 
 ## Integration Tests:
 Integration tests verify interactions between different parts of the application. We will use Jest and Supertest for integration tests:
