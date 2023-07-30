@@ -18,7 +18,7 @@ Let's assume you are working on a Node.js application with the following file st
 
 ```
 
-- Unit Tests:
+## Unit Tests:
 Unit tests focus on testing individual units of code in isolation, typically at the function or class level. We will use Jest as the testing framework for unit tests.
 
 Install Jest and create a test file for the calculator.js module:
@@ -28,3 +28,41 @@ npm install jest --save-dev
 
 ```
 
+calculator.test.js:
+
+```
+const Calculator = require('../src/calculator');
+
+test('adds two numbers correctly', () => {
+  const calc = new Calculator();
+  expect(calc.add(2, 3)).toBe(5);
+});
+
+test('subtracts two numbers correctly', () => {
+  const calc = new Calculator();
+  expect(calc.subtract(5, 3)).toBe(2);
+});
+
+```
+
+## Integration Tests:
+Integration tests verify interactions between different parts of the application. We will use Jest and Supertest for integration tests:
+
+```
+npm install supertest --save-dev
+
+```
+app.test.js:
+
+```
+const request = require('supertest');
+const app = require('../src/app');
+
+test('GET / should return "Hello, World!"', async () => {
+  const response = await request(app).get('/');
+  expect(response.status).toBe(200);
+  expect(response.text).toBe('Hello, World!');
+});
+
+
+```
