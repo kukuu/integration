@@ -54,4 +54,16 @@ app.listen(PORT, () => {
 
 ```
 
+
+## Alerting:
+
+In Grafana, you can create alert rules based on your application metrics. For example, you can set up an alert rule to trigger an email notification when the custom_metric exceeds a certain threshold.
+
+The combination of Prometheus, Grafana, and Node.js APM tools provides comprehensive monitoring and alerting capabilities. By setting up custom metrics and alerts, you can quickly detect issues in your application, such as high error rates, performance degradation, or other critical events, and respond to them in real-time.
+
+Keep in mind that monitoring and alerting should be tailored to your specific application and its requirements.
+
+
+
+
    
