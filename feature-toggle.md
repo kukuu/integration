@@ -39,7 +39,7 @@ app.js:
 ```
 const ldClient = require('./launchdarkly');
 
-// Feature toggle key
+// Feature toggle key. Store this as part of an environmental variable. Dont expose in the application code.
 const MY_FEATURE_TOGGLE_KEY = 'my-feature-toggle';
 
 // Default value when the toggle is not found
