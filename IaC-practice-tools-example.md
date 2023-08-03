@@ -1,4 +1,4 @@
-# Code, Practice and Tools used in implementing Infrastructure as Code (IaC)
+# IaC: Code, Practice and Tools
 
 The following are  few examples of the code, practices, and tools used in Infrastructure as Code. 
 
