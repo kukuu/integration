@@ -40,3 +40,6 @@ async function makeConcurrentRequests() {
 makeConcurrentRequests();
 
 ```
+##  Further Example:
+
+- https://github.com/kukuu/Microservice-NodeJS/blob/master/ggoem/src/index.js
