@@ -56,13 +56,13 @@ It is a practical cybersecurity framework designed to enhance an organization's 
 
 _Firewalls: Ensure firewalls are correctly configured and protect against unauthorized access.
 
-i. Secure Configuration: Implement security measures for hardware and software, minimizing vulnerabilities.
+_Secure Configuration: Implement security measures for hardware and software, minimizing vulnerabilities.
 
-iii. User Access Control: Control access to systems and data based on user roles and responsibilities.
+_User Access Control: Control access to systems and data based on user roles and responsibilities.
 
-iv. Malware Protection: Use appropriate anti-malware software to defend against viruses, malware, and ransomware.
+_Malware Protection: Use appropriate anti-malware software to defend against viruses, malware, and ransomware.
 
-v. Patch Management: Regularly update and patch software to address known vulnerabilities.
+_Patch Management: Regularly update and patch software to address known vulnerabilities.
 
 ### Guide to Implementation:
 
