@@ -44,7 +44,7 @@ test('subtracts two numbers correctly', () => {
 });
 
 ```
-- Bench marking: https://github.com/kukuu/unit-tests-bench-marks/blob/main/unit-test-what-to-look-out-for.md
+- Benchmarking: https://github.com/kukuu/unit-tests-bench-marks/blob/main/unit-test-what-to-look-out-for.md
 
 - Example project: HMRC Payment Gateway - https://github.com/kukuu/HMRC-payment-gateway/tree/main/cinema-tickets-javascript
 
