@@ -341,7 +341,7 @@ https://apidocs.launchdarkly.com/tag/Feature-flags/#operation/postFeatureFlag
 
 ### Request sample
 
-``
+```
 import fetch from 'node-fetch';
 
 async function run() {
