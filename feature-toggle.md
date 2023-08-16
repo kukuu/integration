@@ -78,5 +78,6 @@ enableMyFeatureToggle('user123');
 ## Resources:
 
  - https://launchdarkly.com/
+ - https://docs.launchdarkly.com/home?_gl=1*19b5n9h*_gcl_aw*R0NMLjE2OTIxOTcxMTUuQ2p3S0NBanc1X0dtQmhCSUVpd0E1UVNNeEhHTlNDcWdJUkJwVFFZNDlRR3lNLWo0dTFDbXE4X1ZyNzBqdlBSS29zUTlFV0pHOWdSYm94b0NYNkFRQXZEX0J3RQ..*_gcl_au*MTc3NTg3MzE4My4xNjkyMTk2OTA5
  - https://launchdarkly.com/feature-flags-javascript/
  - https://app.launchdarkly.com/default/test/features
