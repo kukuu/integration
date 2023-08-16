@@ -31,7 +31,7 @@ v. Conduct regular security audits and assessments.
 
 vi. Ethical Hacking and Penetration Testing: Ethical hacking involves intentionally testing systems, networks, and applications for vulnerabilities. Penetration testing is a controlled and systematic approach to identify weaknesses in a system's defenses. Ethical hackers aim to discover vulnerabilities before malicious attackers do, helping organizations enhance their security posture.
 
-#### Key Concepts:
+######## Key Concepts:
 
 - White Hat Hackers: Ethical hackers who work to identify and fix vulnerabilities.
 - Black Hat Hackers: Malicious hackers who exploit vulnerabilities for personal gain.
