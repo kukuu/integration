@@ -20,10 +20,15 @@ Types of Cybersecurity Threats and Attacks:
 - Best Practices for Securing Systems and Data:
 
 i. Regularly update software and applications to patch vulnerabilities.
-ii. Implement strong authentication mechanisms (password policies, multi-factor authentication).
+
+ii. Implement strong authentication mechanisms (password policies,SSO,  multi-factor authentication).
+
 iii. Use encryption to protect data at rest and in transit.
+
 iv. Implement network security measures (firewalls, Certificates/SSL, intrusion detection/prevention systems).
+
 v. Conduct regular security audits and assessments.
+
 vi. Ethical Hacking and Penetration Testing: Ethical hacking involves intentionally testing systems, networks, and applications for vulnerabilities. Penetration testing is a controlled and systematic approach to identify weaknesses in a system's defenses. Ethical hackers aim to discover vulnerabilities before malicious attackers do, helping organizations enhance their security posture.
 
 ## Key Concepts:
