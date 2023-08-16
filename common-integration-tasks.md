@@ -69,7 +69,7 @@ Enterprise Architecture (EA) and Solution Architecture (SA) are two related disc
 #### Enterprise Architcture
 Enterprise Architecture involves the analysis, design, and management of an organization's overall IT landscape. It aims to ensure that IT systems and initiatives align with business strategy, optimize operations, and facilitate business transformation. Some tools used in Enterprise Architecture include:
 
-- Enterprise Architecture Frameworks: Frameworks like TOGAF (The Open Group Architecture Framework), Zachman Framework, or Gartner Enterprise Architecture Framework provide a structured approach for developing and documenting enterprise architectures.
+- Enterprise Architecture Frameworks: Frameworks like TOGAF - https://www.opengroup.org/togaf (The Open Group Architecture Framework), Zachman Framework, or Gartner Enterprise Architecture Framework provide a structured approach for developing and documenting enterprise architectures.
 - Modeling Tools: Tools like Sparx Systems Enterprise Architect, IBM Rational System Architect, or Ardoq assist in creating visual models of an organization's architecture, including business processes, application landscapes, data flows, and technology infrastructure.
 - Repository Tools: Enterprise Architecture repository tools such as Alfabet, Mega, or Troux help in organizing and managing architecture artifacts, capturing relationships, and maintaining a central repository of architecture information.
 - Business Process Modeling: Tools like Bizagi, ARIS, or Microsoft Visio enable modeling and documentation of business processes to understand dependencies and optimize workflows within an organization. 
