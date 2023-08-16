@@ -139,7 +139,8 @@ async function run() {
 run();
 ```
 
-Response sample
+### Response sample
+https://github.com/kukuu/integration/blob/main/FF-sample-response.md
 
 ## Resources:
 
