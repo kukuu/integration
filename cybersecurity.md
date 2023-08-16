@@ -54,7 +54,7 @@ It is a practical cybersecurity framework designed to enhance an organization's 
 
 - Protocols and Controls:
 
-i. Firewalls: Ensure firewalls are correctly configured and protect against unauthorized access.
+_Firewalls: Ensure firewalls are correctly configured and protect against unauthorized access.
 
 i. Secure Configuration: Implement security measures for hardware and software, minimizing vulnerabilities.
 
