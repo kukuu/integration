@@ -3,3 +3,10 @@ These are activities and processes involved in developing and maintaining the ba
 
 They require knowledge in systems integration, API design, and knowledge of the technologies and frameworks used in the integration process and play a crucial role in ensuring the seamless flow of data and functionality across various systems, enabling organisations to build complex, interconnected software solutions and architecture.
 
+# ....more reading:
+- https://github.com/kukuu/system-design-architecture
+- https://github.com/kukuu/system-design-architecture
+- https://github.com/kukuu/software-engineering-best-practices
+- https://github.com/kukuu/microfrontends
+- https://github.com/kukuu/Microservice-NodeJS
+
