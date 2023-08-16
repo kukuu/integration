@@ -338,3 +338,28 @@ https://apidocs.launchdarkly.com/tag/Feature-flags/#operation/postFeatureFlag
   }
 }
 ```
+
+### Request sample
+
+``
+import fetch from 'node-fetch';
+
+async function run() {
+  const projectKey = 'YOUR_projectKey_PARAMETER';
+  const featureFlagKey = 'YOUR_featureFlagKey_PARAMETER';
+  const resp = await fetch(
+    `https://app.launchdarkly.com/api/v2/flags/${projectKey}/${featureFlagKey}`,
+    {
+      method: 'GET',
+      headers: {
+        Authorization: 'YOUR_API_KEY_HERE'
+      }
+    }
+  );
+
+  const data = await resp.text();
+  console.log(data);
+}
+
+run();
+```
