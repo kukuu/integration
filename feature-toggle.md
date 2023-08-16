@@ -78,3 +78,4 @@ enableMyFeatureToggle('user123');
 ## Resources:
 
  - https://launchdarkly.com/
+ - https://launchdarkly.com/feature-flags-javascript/
