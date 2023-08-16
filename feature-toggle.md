@@ -82,7 +82,8 @@ enableMyFeatureToggle('user123');
  - https://launchdarkly.com/feature-flags-javascript/
  - https://app.launchdarkly.com/default/test/features
 
-
+### Using API
+https://github.com/kukuu/integration/blob/main/FF-using-API.md
 
 ### Request sample
 
