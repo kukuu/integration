@@ -365,3 +365,29 @@ async function run() {
 
 run();
 ```
+
+
+Response sample
+
+```
+{
+  "environments": {
+    "production": {
+      "lastRequested": "2020-02-05T18:17:01.514Z",
+      "name": "inactive"
+    }
+  },
+  "key": "flag-key-123abc",
+  "_links": {
+    "parent": {
+      "href": "/api/v2/flag-status",
+      "type": "application/json"
+    },
+    "self": {
+      "href": "/api/v2/flag-status/my-project/my-flag",
+      "type": "application/json"
+    }
+  }
+}
+
+```
