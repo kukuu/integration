@@ -4,7 +4,7 @@ Implementing feature toggles or feature flags allows you to control the release 
 
 This is a very progressive and useful tool in optimisation, refinements, recommendation and improvements during service delivery and support in Management Consultancy.
 
-By using LaunchDarkly, you can manage your feature toggles remotely without the need to modify the application code or redeploy it. This approach allows you to experiment with new features and safely roll them out to a subset of users before enabling them for all users. Additionally, you can quickly disable features in case of issues or performance concerns.
+By using LaunchDarkly, you can manage your feature toggles remotely without the need to modify the application code or redeploy it. This approach allows you to experiment with new features and safely roll them out to a subset of users/segmentation before enabling them for all users. Additionally, you can quickly disable features in case of issues or performance concerns.
 
 ## Steps:
 
@@ -74,3 +74,7 @@ enableMyFeatureToggle('user123');
 4. Update Feature Toggles in LaunchDarkly Dashboard:
 
  Go to your LaunchDarkly dashboard and create a new feature toggle with the key my-feature-toggle. You can then control the behaviour of the feature by toggling it on or off for different users or user segments.
+
+## Resources:
+
+ - https://launchdarkly.com/
