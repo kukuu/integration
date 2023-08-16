@@ -80,7 +80,7 @@ enableMyFeatureToggle('user123');
 ### Using API
 https://github.com/kukuu/integration/blob/main/FF-using-API.md
 
-### Request sample
+### Request Template sample
 
 https://apidocs.launchdarkly.com/tag/Feature-flags#operation/getFeatureFlag
 
@@ -106,7 +106,38 @@ async function run() {
 
 run();
 ```
+Sample 
 
+```
+import fetch from 'node-fetch';
+
+async function run() {
+  const projectKey = 'YOUR_projectKey_PARAMETER';
+  const resp = await fetch(
+    `https://app.launchdarkly.com/api/v2/flags/${projectKey}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'YOUR_API_KEY_HERE'
+      },
+      body: JSON.stringify({
+        clientSideAvailability: {
+          usingEnvironmentId: true,
+          usingMobileKey: true
+        },
+        key: 'flag-key-123abc',
+        name: 'My Flag'
+      })
+    }
+  );
+
+  const data = await resp.json();
+  console.log(data);
+}
+
+run();
+```
 
 Response sample
 
