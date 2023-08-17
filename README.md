@@ -5,7 +5,6 @@ They require knowledge in systems integration, API design, and knowledge of the 
 
 # ....more reading:
 - https://github.com/kukuu/system-design-architecture
-- https://github.com/kukuu/system-design-architecture
 - https://github.com/kukuu/software-engineering-best-practices
 - https://github.com/kukuu/microfrontends
 - https://github.com/kukuu/Microservice-NodeJS
