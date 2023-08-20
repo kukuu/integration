@@ -54,15 +54,15 @@ It is a practical cybersecurity framework designed to enhance an organization's 
 
 - Protocols and Controls:
 
-_Firewalls: Ensure firewalls are correctly configured and protect against unauthorized access.
+i. Firewalls: Ensure firewalls are correctly configured and protect against unauthorized access.
 
-_Secure Configuration: Implement security measures for hardware and software, minimizing vulnerabilities.
+ii. Secure Configuration: Implement security measures for hardware and software, minimizing vulnerabilities.
 
-_User Access Control: Control access to systems and data based on user roles and responsibilities.
+iii. User Access Control: Control access to systems and data based on user roles and responsibilities.
 
-_Malware Protection: Use appropriate anti-malware software to defend against viruses, malware, and ransomware.
+iii. Malware Protection: Use appropriate anti-malware software to defend against viruses, malware, and ransomware.
 
-_Patch Management: Regularly update and patch software to address known vulnerabilities.
+iv. Patch Management: Regularly update and patch software to address known vulnerabilities.
 
 ### Guide to Implementation:
 
