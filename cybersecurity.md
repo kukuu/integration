@@ -21,7 +21,7 @@ Types of Cybersecurity Threats and Attacks:
 
 i. Regularly update software and applications to patch vulnerabilities.
 
-ii. Implement strong authentication mechanisms (password policies,SSO,  multi-factor authentication).
+ii. Implement strong authentication mechanisms (password policies,SSO, OAuth, JWT, multi-factor authentication).
 
 iii. Use encryption to protect data at rest and in transit.
 
