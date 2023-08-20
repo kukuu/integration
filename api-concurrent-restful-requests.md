@@ -31,8 +31,8 @@ async function makeConcurrentRequests() {
 
     // Add further processing as needed
 
-  } catch (error) {
-    console.error('Error:', error.message);
+  } catch (errors) {
+    console.error('Error:', errors.message);
   }
 }
 
