@@ -50,7 +50,7 @@ It is a practical cybersecurity framework designed to enhance an organization's 
 
 - Certification Levels: There are two certification levels: Cyber Essentials and Cyber Essentials Plus, which involves a more rigorous assessment.
 
-- Recognition: Achieving Cyber Essentials certification demonstrates a commitment to cybersecurity and can enhance an organization's reputation.
+- Recognition: Achieving Cyber Essentials certification demonstrates a commitment to cybersecurity and can enhance an organization's reputation and spine.
 
 - Protocols and Controls:
 
