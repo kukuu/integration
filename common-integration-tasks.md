@@ -11,7 +11,7 @@ Converting data formats, structures, and representations to ensure compatibility
 Implementing messaging systems and event-driven architectures to enable asynchronous communication and decoupling between components. This involves setting up message queues, event brokers, or publish-subscribe mechanisms to handle communication between systems.
 
 ## Security and Authentication: 
-Implementing authentication and authorization mechanisms to ensure secure access and data protection during integration. This may involve implementing OAuth, token-based authentication, or other security measures to authenticate and authorize requests.
+Implementing authentication and authorization mechanisms to ensure secure access and data protection during integration. This may involve implementing OAuth, token-based authentication (JWT), or other security measures to authenticate and authorize requests - using SSL, Firewalls.
 
 ## Error Handling and Logging: 
 Implementing error handling mechanisms to capture and handle exceptions, failures, and unexpected events during integration. This includes logging errors, generating error reports, and implementing retry mechanisms to handle transient failures.
