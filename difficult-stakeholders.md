@@ -1,4 +1,4 @@
-# Adopted Strategies working with difficult Stakeholder
+# Reasonable Strategies for working with difficult Stakeholder
 
 By employing these strategies, you should be able navigate challenging stakeholder interactions, foster positive relationships while maintaining project alignment even in complex situations.
 
