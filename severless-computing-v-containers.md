@@ -1,4 +1,4 @@
-# Severless Computing vs Containers
+# Containers, Severless Computing and Virtual Machines 
 
 Both serverless computing and containers enable developers to build applications with far less overhead and more flexibility than applications hosted on traditional servers or virtual machines. Which style of architecture a developer should use depends on the needs of the application, but serverless applications are more scalable and usually more cost-effective.
 
