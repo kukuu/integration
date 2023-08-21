@@ -41,8 +41,7 @@ exceed expectations.
 
 Serverless architecture is a way to do exactly that. When it comes to computing power, serverless
 computing is like a water supply in a modern home: by turning on the tap, consumers can acquire and
-use as much water as 
-they need at any time, and they only pay for what they use. This is far more scalable than attempting
+use as much water as they need at any time, and they only pay for what they use. This is far more scalable than attempting
 to buy water one bucket, or one shipping container, at a time.
 
 3. Cost
@@ -50,7 +49,7 @@ to buy water one bucket, or one shipping container, at a time.
 Containers are constantly running, and therefore cloud providers have to charge for the server 
 space even if no one is using the application at the time.
 
-There are no continued expenses in a serverless architecture because application code does not run
+There are no continued expenses in a serverless architecture because the application code does not run
 unless it is called. Instead, developers are only charged for the server capacity that their 
 application does in fact use.
 
