@@ -16,7 +16,7 @@ A virtual machine is a piece of software that imitates a complete computer syste
 
 ## What is serverless computing?
 
-Serverless applications are broken up into functions, and hosted by a third-party vendor who charges the application developer only based on the amount of time each function runs. For more on serverless computing, see What is serverless computing?
+Serverless applications are broken up into functions, and hosted by a third-party vendor who charges the application developer only based on the amount of time each function runs. 
 
 ## What are the key differences between serverless computing and containers?
 
