@@ -11,7 +11,7 @@ Below are practices and techniques that software development teams should use to
 - Incremental Deployments: Use techniques like canary deployments or blue-green deployments to gradually release changes to a subset of users or servers before deploying to the entire production environment.
 - Infrastructure as Code (IaC): Use infrastructure as code tools to manage the deployment and configuration of the application's infrastructure. IaC ensures consistency and reproducibility across environments.
 - Containerization and Orchestration: Utilize containerization technologies like Docker and container orchestration platforms like Kubernetes to package and deploy applications consistently across environments.
-- Continuous Delivery (CD): Aim to automate the entire deployment process, from code commit to production deployment, using CD pipelines. This minimizes manual intervention and reduces the risk of human errors.
+- Continuous Deployment: Aim to automate the entire deployment process, from code commit to production deployment, using CD pipelines. This minimizes manual intervention and reduces the risk of human errors.
 - Deployment Rollbacks: Implement a mechanism to quickly and safely rollback to the previous version in case of issues after deployment.
 - Collaboration and Communication: Foster a culture of collaboration between development, operations, and other teams involved in the deployment process. Effective communication and teamwork are crucial for successful continuous deployment.
 
