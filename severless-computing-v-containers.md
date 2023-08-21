@@ -80,7 +80,7 @@ it to production.
 
 ## How are serverless computing and containers similar?
 
-Both are cloud-based, and both greatly reduce infrastructure overhead – serverless computing more so than containers. In both kinds of architecture, applications are broken down and deployed as smaller components. In a container-based architecture, each container will run one microservice.
+Both are cloud-based, and both greatly reduce infrastructure overhead – serverless computing more so than containers. In both kinds of architecture, applications are broken down and deployed as smaller components. In a container-based architecture, each container will run one microservice. The server machine is broken down into environments. Each can serve as a container and can run applications on their own independently of one another. Multiple containers can run on the same machine independently of one another. They share the same Kernel and OS, and are better used for deploying and managing microservices.
 
 ## What are microservices?
 
