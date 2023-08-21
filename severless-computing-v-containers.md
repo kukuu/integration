@@ -56,7 +56,7 @@ application does in fact use.
 4. Maintenance
 
 Containers are hosted in the cloud, but cloud providers do not update or maintain them. 
-Developers have to manage and update each container they deploy.
+Developers have to manage and update each container they deploy. Using Kubernetes for orchestration as an example.
 
 From a developer's perspective, a serverless architecture has no backend to manage. 
 The vendor takes care of all management and software updates for the servers that run the code.
