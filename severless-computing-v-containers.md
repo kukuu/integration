@@ -32,8 +32,7 @@ desired.
 2. Scalability
 
 In a container-based architecture, the number of containers deployed is determined by the developer
-in advance. In contrast, in a serverless architecture, the backend inherently and automatically 
-scales to meet demand.
+in advance - i.e using Kubernetes for orchestration. In contrast, in a serverless architecture, the backend inherently and automatically scales to meet demand.
 
 To continue the shipping container metaphor, a shipping company could try to forecast an increase 
 in demand for a certain product and ship more containers to the destination to meet that demand,
