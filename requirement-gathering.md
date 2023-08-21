@@ -9,7 +9,7 @@ When planning for digital transformation, organizations must factor the cultural
 Practices used in transformation include methodologies like Agile (SCRUM, KANBAN) , XP, Waterfall, Continuous Delivery, Continuous Deployment, Micro-services, Containerization, Severless Computing, IaaS, PaaS, ITaaS, Headerless CMS, Hybrid CMS, Big Data, Analytics, Machine Learning, AI, Change Management, Cloud Computing, Digital Security, Leadership & Development,IoT,Chat Bots, Video Chats, and Mobility Management.
 
 
-## The process: Stakeholder, Management, Technologies, Planning, Methodology, and Tools
+## The process
 Management Consultancy process involves a systematic approach to requirement gathering, technology alignment, planning, implementation, testing, delivery, training, and ongoing support. Throughout each stage, a combination of communication tools, project management platforms, development environments, testing frameworks, and monitoring solutions ensure a successful digital transformation aligned with client goals and industry best practices. Hereby explain the steps:
 
 - Initial Consultation:
