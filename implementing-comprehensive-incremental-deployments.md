@@ -6,6 +6,7 @@ By implementing these practices and leveraging appropriate tools, teams can achi
 Here are some practices and tools that can be used to implement comprehensive incremental deployments:
 Feature Toggles/Flags: Use feature toggles to enable or disable specific features during deployment. This allows you to control the rollout of new functionality and easily roll back if needed. Tools like LaunchDarkly or Unleash can help manage feature toggles.
 
+- Continuous Integration and Delivery (CI/CD): Implement automated CI/CD pipelines to build, test, and deploy code frequently and reliably. Jenkins, GitLab CI/CD, and CircleCI are popular CI/CD tools.
 - Microservice: A Microservices architecture refers to an application which is constructed from a number of independent services called Microservices.  Each microservice is a self-contained module that performs a discrete group of functions.
     - Loose coupling since it decouples clients from services
     - Small individual components
@@ -26,8 +27,6 @@ Feature Toggles/Flags: Use feature toggles to enable or disable specific feature
 - Canary Deployment (Segmentation) : Deploy new features or updates to a small subset of users (the "canary" group) before rolling out to the entire user base. This helps identify issues early and minimize the impact of potential problems. Kubernetes and Istio can assist in canary deployments.
 
 - Blue-Green Deployment: Maintain two identical environments, one active (blue) and the other inactive (green). Deploy updates to the inactive environment and switch traffic to the updated version once it's tested and verified. Tools like AWS Elastic Beanstalk or Docker Swarm can facilitate blue-green deployments.
-
-- Continuous Integration and Delivery (CI/CD): Implement automated CI/CD pipelines to build, test, and deploy code frequently and reliably. Jenkins, GitLab CI/CD, and CircleCI are popular CI/CD tools.
 
 - Automated Testing: Comprehensive test suites, including unit tests, integration tests, and end-to-end tests, help ensure the stability and quality of each incremental deployment.
 
