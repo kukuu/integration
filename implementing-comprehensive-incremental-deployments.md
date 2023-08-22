@@ -4,7 +4,8 @@ Incremental deployments are an approach to deploying software updates in smaller
 By implementing these practices and leveraging appropriate tools, teams can achieve comprehensive incremental deployments, allowing them to release software updates more frequently and with greater confidence in the stability and quality of the releases.
 
 Here are some practices and tools that can be used to implement comprehensive incremental deployments:
-Feature Toggles/Flags: Use feature toggles to enable or disable specific features during deployment. This allows you to control the rollout of new functionality and easily roll back if needed. Tools like LaunchDarkly or Unleash can help manage feature toggles.
+
+- Feature Toggles/Flags: Use feature toggles to enable or disable specific features during deployment. This allows you to control the rollout of new functionality and easily roll back if needed. Tools like LaunchDarkly or Unleash can help manage feature toggles.
 
 - Continuous Integration and Delivery (CI/CD): Implement automated CI/CD pipelines to build, test, and deploy code frequently and reliably. Jenkins, GitLab CI/CD, and CircleCI are popular CI/CD tools.
 - Microservice: A Microservices architecture refers to an application which is constructed from a number of independent services called Microservices.  Each microservice is a self-contained module that performs a discrete group of functions.
