@@ -23,7 +23,7 @@ i. Regularly update software and applications to patch vulnerabilities.
 
 ii. Implement strong authentication mechanisms (password policies,SSO, OAuth, JWT, multi-factor authentication).
 
-iii. Use encryption to protect data at rest and in transit - Hashing,  SSL.
+iii. Use encryption to protect data at rest and in transit - Hashing etc.
 
 iv. Implement network security measures (firewalls, Certificates/SSL, intrusion detection/prevention systems).
 
