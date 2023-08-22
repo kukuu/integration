@@ -1,6 +1,8 @@
 # Monitoring and Alerting system for improving CD pipeline
 
-Implementing a robust monitoring and alerting system is crucial for detecting and responding to issues in real-time. Below are examples of popular tools and a code snippet to showcase how you can set up monitoring and alerting:
+Implementing a robust monitoring and alerting system is crucial for detecting and responding to issues in real time. 
+
+Tools: Application monitoring tools (New Relic, Datadog, Prometheus, Grafana), incident tracking systems (ServiceNow). Below are examples of popular tools and a code snippet to showcase how you can set up monitoring and alerting to track the performance and health of the newly implemented systems:
 
 
 ## Monitoring 
