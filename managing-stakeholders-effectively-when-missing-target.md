@@ -16,7 +16,7 @@
 
 - Engaged Collaboration: Engage stakeholders in collaborative discussions to brainstorm solutions, seek input, and ensure a collective effort to overcome the challenges.
 
-- ManagE Expectations: Set realistic expectations for the steps needed to recover from missed targets and provide a clear timeline for improvements.
+- Manage Expectations: Set realistic expectations for the steps needed to recover from missed targets and provide a clear timeline for improvements.
 
 - Continual Improvement: Use the experience of missing targets as an opportunity to improve processes, workflow, and communication to prevent similar issues in the future.
 
