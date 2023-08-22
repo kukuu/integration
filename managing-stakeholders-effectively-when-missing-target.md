@@ -10,7 +10,7 @@
 
 - Revised Action Plans: Develop revised action plans outlining specific steps to address the missed targets, demonstrating commitment to rectify the situation.
 
-- Mitigation Strategies: Proactively propos mitigation strategies to mitigate the impact of missed targets and share these strategies with stakeholders.
+- Mitigation Strategies: Proactively propose mitigation strategies to mitigate the impact of missed targets and share these strategies with stakeholders.
 
 - Focuse on Solutions: Rather than dwelling on the problem, emphasized the steps being taking to address the situation and outlined how it would positively impact the project moving forward.
 
