@@ -6,7 +6,7 @@
 
 - Early Warning: Instead of waiting for the situation to escalate, provide early warnings about potential challenges, allowing stakeholders to be prepared and potentially adjust their expectations.
 
-- Root Cause Analysis: When targets were missed, I conducted thorough root cause analysis to understand the underlying factors and prevent similar issues in the future.
+- Root Cause Analysis: When targets are missed, conduct thorough root cause analysis to understand the underlying factors and prevent similar issues in the future.
 
 - Revised Action Plans: Develop revised action plans outlining specific steps to address the missed targets, demonstrating commitment to rectify the situation.
 
