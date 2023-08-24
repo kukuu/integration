@@ -51,3 +51,9 @@ It is a secure and compact way to transmit information between parties. It conta
 
 - Browser Compatibility: SSL certificates are widely supported by web browsers, ensuring seamless user experiences.
 SEO Benefits: Google and other search engines give preference to HTTPS-enabled sites, improving search rankings.
+
+## Further reading:
+
+- https://github.com/kukuu/digitalTransformationStrategies/tree/master/certificates
+
+- https://github.com/kukuu/digitalTransformationStrategies/blob/master/JWT-architecture.png
