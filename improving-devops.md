@@ -1,4 +1,4 @@
-# improving operational excellence of DevOps Capability
+# Improving operational excellence of DevOps capability
 
 I spearheaded a series of General DevOps practice improvements by introducing a streamlined CI/CD pipeline, leveraging tools like Jenkins and GitLab to automate the deployment process in the delivery of the cloud-based NOTIFICATION platform for FIFA World Cup2022 and recently on the AZZOTTO Digital Broadcasting Platform. 
 
