@@ -4,7 +4,7 @@ I spearheaded a series of General DevOps practice improvements by introducing a 
 
 This resulted in reduced deployment times and improved code quality through automated testing. I established KPI analytics to measure key metrics such as deployment frequency, lead time, and change failure rate, providing valuable insights into our development efficiency and stability.
 
-In terms of monitoring and metrics, I designed and implemented a holistic, multi-tenant platform monitoring system using tools like Prometheus and Grafana. This allowed us to proactively detect and address performance bottlenecks and service disruptions, enhancing our service reliability. By analysing metrics related to uptime, response times, and resource utilisation, optimised our platform's performance and resource allocation.
+In terms of monitoring and metrics, I designed and implemented a holistic, multi-tenant platform monitoring system using tools like Prometheus and Grafana. This allowed me to proactively detect and address performance bottlenecks and service disruptions, enhancing our service reliability. By analysing metrics related to uptime, response times, and resource utilisation, optimised our platform's performance and resource allocation.
 
 To ensure service excellence, I actively engaged with stakeholders, both internal and external, to understand their requirements and expectations. By aligning our DevOps practices with their needs, I improved service delivery and customer satisfaction. I played a pivotal role in contributing to strategic and commercial plans by providing insights into technological trends and identifying opportunities for innovation and growth.
 
