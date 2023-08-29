@@ -9,4 +9,5 @@ They require knowledge in systems integration, API design, and knowledge of the 
 - https://github.com/kukuu/unit-tests-bench-marks
 - https://github.com/kukuu/microfrontends
 - https://github.com/kukuu/Microservice-NodeJS
+- https://owasp.org/www-project-top-ten/
 
