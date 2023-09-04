@@ -2,7 +2,9 @@
 
 JSON Web Token (JWT) is a compact and self-contained way to represent information between two parties in a secure manner. It is often used for authentication and data exchange in web applications. JWTs are digitally signed, ensuring their integrity and authenticity. They consist of three parts: the header, the payload, and the signature.
 
-It is a secure and compact way to transmit information between parties. It contains a header, payload, and signature, and can be created using symmetric or asymmetric encryption. SSL (Secure Sockets Layer) provides encryption, authentication, and data integrity for communication between clients and servers.
+It is a secure and compact way to transmit information between parties. It contains a header, payload, and signature, and can be created using symmetric or asymmetric encryption.
+
+SSL (Secure Sockets Layer) provides encryption, authentication, and data integrity for communication between clients and servers.
 
 ## Features and Attributes of JWT
 
