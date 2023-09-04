@@ -4,7 +4,6 @@ JSON Web Token (JWT) is a compact and self-contained way to represent informatio
 
 It is a secure and compact way to transmit information between parties. It contains a header, payload, and signature, and can be created using symmetric or asymmetric encryption.
 
-SSL (Secure Sockets Layer) provides encryption, authentication, and data integrity for communication between clients and servers.
 
 ## Features and Attributes of JWT
 
