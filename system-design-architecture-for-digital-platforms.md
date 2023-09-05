@@ -59,6 +59,10 @@ v. Code (Implementation)
 
 - https://github.com/kukuu/AGILITY/raw/master/white-paper/software-architecture-main.jpg
 
+## Client Server Multi-tier
+
+
+![image](https://github.com/kukuu/integration/assets/10147828/8921e2ac-676b-4508-be2a-f4c3d64f2c20)
 
 ##  How to convert monolithic to Microservices
 
