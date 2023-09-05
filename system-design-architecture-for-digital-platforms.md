@@ -42,7 +42,8 @@ By combining the technologies, methodologies and practices below, you can succes
 
 ## Principles of Software Design Architecture
 
-- https://github.com/kukuu/AGILITY/raw/master/white-paper/principles-of-sw-architecture.png
+![image](https://github.com/kukuu/integration/assets/10147828/c3c69b95-1a81-4703-931a-5ddef8e19aa4)
+
 
 ```
 
