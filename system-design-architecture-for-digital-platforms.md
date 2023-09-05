@@ -1,4 +1,12 @@
 # System Design Architecture for scalable robust digital platforms
+Software architecture refers to the high level structures of a software system and the discipline of creating such structures and systems. Each structure comprises software elements, relations among them, and properties of both elements and relations.
+
+The architecture is a blend of technical decisions and architectural patterns, and considered the root of a software project to ensure its scalability, resilience, robustness, security, quality, cost effectiveness and longevity.
+
+The architecture is made so the code structure can satisfy every software prerequisite that is being developed while exemplifying transversal attributes such as performance, quality, scalability, maintainability, manageability, elasticity and usability.
+
+You can use multiple patterns in a single system to optimize each section of code with the best architecture.
+
 There are many recognized architectural patterns and styles, among them:
 
 
