@@ -10,18 +10,14 @@ There are many recognized architectural patterns and styles, among them:
 
 3. Microservices architecture
 
-4. Monolithic application
+4. Event Driven  / Implicit invocation 
 
-5. Micro-kernael (COTS/Plugin)
+5. Monolithic application : A monolithic application describes a single-tiered software application in which the user interface and data access code are combined into a single program from a single platform. A monolithic application is self-contained, and independent from other computing applications.
 
-6. Event Driven  / Implicit invocation
+6. Micro-kernael (COTS/Plugin)
 
 7. Publish/Subscribe
 
-```
-A monolithic application describes a single-tiered software application in which the user interface and data access code are combined into a single program from a single platform. A monolithic application is self-contained, and independent from other computing applications.
-
-```
 
 8. Component-based
 
