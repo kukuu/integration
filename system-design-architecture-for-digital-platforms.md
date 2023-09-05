@@ -69,6 +69,8 @@ v. Code (Implementation)
 
 ##  How to convert monolithic to Microservices
 
+```
+
 1. Look for probable targets by researching the Monolith and warm up with a simple and fairly decoupled capability. 
    i.e Authentication and then Profile
 
@@ -84,6 +86,8 @@ v. Code (Implementation)
 6. Decouple Capability and not Code.
 
 7. Go Macro First, then Micro.
+
+```
 
 ## NodeJS Microservice
 
