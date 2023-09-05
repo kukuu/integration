@@ -1,5 +1,34 @@
 # System Design Architecture for scalable, robust digital platforms
+There are many recognized architectural patterns and styles, among them:
 
+## Architectural patterns & styles:
+
+```
+
+1. Client-server ( 2-tier, 3-tier, n-tier, cloud computing exhibit this style)
+
+2. Layered (or multilayered architecture)
+
+3. Microservices architecture
+
+4. Monolithic application
+
+5. Micro-kernael (COTS/Plugin)
+
+6. Event Driven  / Implicit invocation
+
+7. Publish/Subscribe
+
+```
+A monolithic application describes a single-tiered software application in which the user interface and data access code are combined into a single program from a single platform. A monolithic application is self-contained, and independent from other computing applications.
+
+```
+
+8. Component-based
+
+9. Data-centric
+
+```
 By combining the technologies, methodologies and practices below, you can successfully build a digital platform that will be highly scalable, reliable, and maintainable. The platform could efficiently handle growing user loads, recover from failures, and provide actionable insights through comprehensive monitoring and observability. This approach will ensure the platform's resilience and responsiveness, meeting the demands of a dynamic digital landscape.
 
 - Software System Design Architecture: Start by carefully designing the architecture of the digital platform. follow established software engineering standard methodologies such as the SOLID principles, Domain-Driven Design (DDD) to ensure a maintainable and scalable system and also Security andProject Management methodolgies and guidelines like OWASP, TOGAF, Agile etc.
@@ -15,6 +44,7 @@ By combining the technologies, methodologies and practices below, you can succes
 - Kubernetes: Containerization using Docker and orchestration with Kubernetes enabled easy management and scaling of microservices. Kubernetes provided features like load balancing, self-healing, and rolling updates.
 
 - Monitoring and Observability: I implemented monitoring and observability solutions using Prometheus and Grafana. This allowed for real-time monitoring of application health, resource utilization, and the ability to set up alerts for proactive issue resolution.
+
 
 ## Principles of Software Design Architecture
 
@@ -54,3 +84,30 @@ v. Code (Implementation)
 
 7. Go Macro First, then Micro.
 
+## NodeJS Microservice
+
+- https://github.com/kukuu/microservices
+
+- https://github.com/kukuu/microservices/tree/master/microservice-nodejs-express
+
+![image](https://github.com/kukuu/integration/assets/10147828/cd910655-6da1-4a00-ba00-16efabc7b0a2)
+
+## SPRING BOOT JAVA Microservice
+
+![image](https://github.com/kukuu/integration/assets/10147828/e48fa1d1-8fe2-4c30-8e8d-43274d263898)
+
+
+## CI/CD
+
+- ![image](https://github.com/kukuu/integration/assets/10147828/e06f4212-8d1e-4782-9a9c-2f11b8b54616)
+
+## Kubernetes Orchestration
+
+![image](https://github.com/kukuu/integration/assets/10147828/116fd731-8f01-4c0b-9f95-ed02d7bc726c)
+
+## Further reading
+
+- https://github.com/kukuu/integration
+- https://github.com/kukuu/system-design-architecture/blob/master/README.md
+- https://github.com/kukuu/integration/blob/main/jwt.md
+- https://github.com/kukuu/AGILITY/raw/master/white-paper/JWT-architecture.png
