@@ -44,6 +44,7 @@ By combining the technologies, methodologies and practices below, you can succes
 
 - https://github.com/kukuu/AGILITY/raw/master/white-paper/principles-of-sw-architecture.png
 
+```
 
 i. Identify Business goals 
        
@@ -54,6 +55,8 @@ iii. Architecture
 iv. Design
 
 v. Code (Implementation)
+
+```
 
 ## Design decision
 
