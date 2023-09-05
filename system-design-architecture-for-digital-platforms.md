@@ -1,4 +1,4 @@
-# System Design Architecture for scalable, robust digital platforms
+# System Design Architecture for scalable robust digital platforms
 There are many recognized architectural patterns and styles, among them:
 
 
