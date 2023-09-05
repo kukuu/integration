@@ -15,7 +15,7 @@ There are many recognized architectural patterns and styles, among them:
 
 5. Micro-kernael (COTS/Plugin)
 
-6. Event Driven
+6. Event Driven  / Implicit invocation
 
 7. Publish/Subscribe
 
@@ -24,10 +24,8 @@ A monolithic application describes a single-tiered software application in which
 
 ```
 
-5. Component-based
+8. Component-based
 
-6. Event Driven  / Implicit invocation
-
-7. Data-centric
+9. Data-centric
 
 ```
