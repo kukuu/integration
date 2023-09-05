@@ -60,7 +60,8 @@ v. Code (Implementation)
 
 ## Design decision
 
-- https://github.com/kukuu/AGILITY/raw/master/white-paper/software-architecture-main.jpg
+![image](https://github.com/kukuu/integration/assets/10147828/24149165-3a03-4194-afd9-292f20fc3e1a)
+
 
 ## Client Server Multi-tier
 
