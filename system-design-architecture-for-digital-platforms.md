@@ -18,7 +18,6 @@ There are many recognized architectural patterns and styles, among them:
 
 7. Publish/Subscribe
 
-
 8. Component-based
 
 9. Data-centric
