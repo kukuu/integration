@@ -6,7 +6,7 @@ There are many recognized architectural patterns and styles, among them:
 
 1. Client-server ( 2-tier, 3-tier, n-tier, cloud computing exhibit this style)
 
-2. Layered (or multilayered architecture)
+2. Layered (or multilayered architecture eg. MVC)
 
 3. Microservices architecture
 
