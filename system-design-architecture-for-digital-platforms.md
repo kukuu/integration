@@ -128,7 +128,7 @@ v. Code (Implementation)
 ![image](https://github.com/kukuu/integration/assets/10147828/116fd731-8f01-4c0b-9f95-ed02d7bc726c)
 
 
-## Software  Design Pattern
+## Software  Design Patterns
 
 ### The Constructor Design Pattern
 
