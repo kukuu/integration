@@ -78,7 +78,7 @@ Enterprise Architecture involves the analysis, design, and management of an orga
 Solution Architecture focuses on designing specific solutions or systems that address business needs within the context of the enterprise architecture. It involves defining the structure, components, and interactions of the solution to meet functional and non-functional requirements. Some tools used in Solution Architecture include:
 - Modeling and Design Tools: Tools like Visual Paradigm, Lucidchart,FIGMA, MIRO or draw.io assist in creating visual models, diagrams, and prototypes to represent solution architectures, including components, interfaces, and data flows.
 - Requirements Management Tools: Tools such as Jira, IBM Rational DOORS, or Microsoft Azure DevOps help manage and track requirements, ensuring they are captured, prioritized, and addressed in the solution architecture.
-- Collaboration and Communication Tools: Tools like Microsoft Teams, Slack, or Confluence support collaboration and communication among architects, stakeholders, and development teams, facilitating knowledge sharing and decision-making.
+- Collaboration and Communication Tools : Tools like Microsoft Teams, Slack, or Confluence support collaboration and communication among architects, stakeholders, and development teams, facilitating knowledge sharing and decision-making.
 - Integration and API Management Tools: Solutions often require integration with other systems and services. Integration tools like MuleSoft, Apache Camel, or IBM Integration Bus assist in designing and managing integration points and APIs. 
 
 
