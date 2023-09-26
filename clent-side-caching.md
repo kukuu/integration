@@ -25,6 +25,6 @@ Service workers are scripts that run in the background, enabling advanced cachin
 
 Cookies are small pieces of data stored in the user's browser. While they are primarily used for maintaining session information and user preferences, they can also be used for client-side caching of small amounts of data.
 
-- Application Cache (Deprecated):
+- Application Cache (Deprecated!):
 
 The Application Cache was an old mechanism for caching resources for offline use. However, it is now deprecated in favor of more modern alternatives like Service Workers and the Cache API.
