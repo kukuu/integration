@@ -55,10 +55,23 @@ Solution Architecture focuses on designing specific solutions or systems that ad
 - Integration and API Management Tools: Solutions often require integration with other systems and services. Integration tools like MuleSoft, Apache Camel, or IBM Integration Bus assist in designing and managing integration points and APIs. 
 
 
+## Visualisation, Dashboards, Datasets Aggregation, CRUD Operations:
+
+- https://github.com/kukuu/visual-charts-dashboards
+
+- Aggregation Spreadsheets
+https://docs.google.com/spreadsheets/d/1x2VrC-56FCisB-VNs2G12P5ySBNMCmnT6N4sqSyq4dE/edit#gid=0
+
+- Aggregation Dashboard
+https://pritamsharma45.github.io/google-charts/
+
+- Merging spreadsheets  - https://drive.google.com/file/d/1pQDJFLjncte-bQy3DEttrBihIQp5_1U7/view
+
+- Google Sheet CRUD Applications
+https://drive.google.com/file/d/1LCi_PciknOFIhoiWiNXqHjH8XuOOaN9z/view?ts=658eb09c
 
 
-
-# ..more reading:
+# Further reading:
 - https://github.com/kukuu/system-design-architecture
 - https://github.com/kukuu/software-engineering-best-practices
 - https://github.com/kukuu/unit-tests-bench-marks
