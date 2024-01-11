@@ -55,7 +55,7 @@ Solution Architecture focuses on designing specific solutions or systems that ad
 - Integration and API Management Tools: Solutions often require integration with other systems and services. Integration tools like MuleSoft, Apache Camel, or IBM Integration Bus assist in designing and managing integration points and APIs. 
 
 
-## Visualisation, Dashboards, Datasets Aggregation, CRUD Operations:
+## Visualisation, Dashboards, Datasets Aggregation with CRUD operations:
 
 - https://github.com/kukuu/visual-charts-dashboards
 
