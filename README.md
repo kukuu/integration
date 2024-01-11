@@ -57,7 +57,7 @@ Solution Architecture focuses on designing specific solutions or systems that ad
 
 ## Visualisation, Dashboards, Datasets Aggregation with CRUD operations:
 
-- Repo: https://github.com/kukuu/visual-charts-dashboards
+- Repository: https://github.com/kukuu/visual-charts-dashboards
 
 - Aggregation Spreadsheets: 
 https://docs.google.com/spreadsheets/d/1x2VrC-56FCisB-VNs2G12P5ySBNMCmnT6N4sqSyq4dE/edit#gid=0
