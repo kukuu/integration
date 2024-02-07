@@ -4,7 +4,7 @@ These are activities and processes involved in developing and maintaining the ba
 They require knowledge in systems integration, API design and knowledge of the technologies and frameworks used in the integration process and play a crucial role in ensuring the seamless flow of data and functionality across various systems, enabling organisations to build complex, interconnected software solutions and architecture.
 
 ## Common integration backend tasks:
-Here are some common integration backend tasks:
+Here are some common integration backend tasks: 
 
 - API Development: 
 Creating backend APIs (Application Programming Interfaces) that define the protocols, data formats, and operations required for communication between different systems. This involves designing and implementing RESTful APIs, SOAP APIs, GraphQL APIs, or other types of APIs based on the integration requirements.
