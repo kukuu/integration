@@ -315,3 +315,99 @@ npm start
 ```
 
 
+
+## Using an Example Custom Object Data set
+...........................................
+..........................................
+To demonstrate an example of object values from the https://external-api.example.com/meter-readings API, we need to simulate the response that such an API might return. Here's an example of the data structure that the external API could return:
+
+1. JSON Object data from an Array:
+
+```
+[
+  {
+    "id": "1",
+    "timestamp": "2023-06-28T12:00:00Z",
+    "value": 123.45
+  },
+  {
+    "id": "2",
+    "timestamp": "2023-06-28T13:00:00Z",
+    "value": 130.67
+  },
+  {
+    "id": "3",
+    "timestamp": "2023-06-28T14:00:00Z",
+    "value": 125.32
+  }
+]
+
+
+```
+To integrate this example data with the backend and frontend code we provided earlier, follow these steps:
+
+2. Backend (Node.js, Express, TypeScript)
+
+i. Simulate External API Response
+For demonstration purposes, we'll replace the actual external API call with a mock response in meterService.ts.
+
+src/meterService.ts
+
+```
+interface MeterReading {
+  id: string;
+  timestamp: string;
+  value: number;
+}
+
+export const fetchMeterReadings = async (): Promise<MeterReading[]> => {
+  // Simulating an external API response
+  
+  const mockResponse: MeterReading[] = [
+    {
+      id: '1',
+      timestamp: '2023-06-28T12:00:00Z',
+      value: 123.45
+    },
+    {
+      id: '2',
+      timestamp: '2023-06-28T13:00:00Z',
+      value: 130.67
+    },
+    {
+      id: '3',
+      timestamp: '2023-06-28T14:00:00Z',
+      value: 125.32
+    }
+  ];
+  return mockResponse;
+};
+
+
+```
+
+3. Frontend (React, TypeScript)
+No changes needed here, as the frontend is already set up to fetch and display the meter readings from the backend.
+
+4. Running the Application
+
+i. Backend
+In the meter-readings-backend directory:
+
+
+tsc
+node dist/index.js
+
+
+ii. Frontend
+In the meter-readings-frontend directory:
+
+npm start
+
+
+5. Summary:
+
+Navigate to http://localhost:3000 in your browser to see the meter readings displayed. The frontend will display the mock readings provided by the backend.
+
+This example shows how the backend simulates an external API response and serves it via an endpoint. The frontend consumes this endpoint and displays the readings.
+
