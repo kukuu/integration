@@ -317,8 +317,7 @@ npm start
 
 
 ## Example: Using  Custom Object Data set
-...........................................
-..........................................
+
 To demonstrate an example of object values from the https://external-api.example.com/meter-readings API, we need to simulate the response that such an API might return. Here's an example of the data structure that the external API could return:
 
 1. JSON Object data from an Array:
