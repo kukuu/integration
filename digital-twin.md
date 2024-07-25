@@ -48,7 +48,7 @@ Front End:
     "type": "git",
     "url": "https://github.com/yourusername/electricity-meter-digital-twin.git"
   },
-  "author": "Your Name",
+  "author": "Alexander Adu-Sarkodie",
   "license": "MIT",
   "dependencies": {
     "concurrently": "^6.2.1"
