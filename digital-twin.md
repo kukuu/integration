@@ -1,4 +1,4 @@
-# Digital Twin Smart Meatre.
+# Digital Twin Smart Meter.
 
 ## Metre Reading (Electricity/Energy)
 Creating a full-stack application with a Node.js backend and a React frontend that displays readings from an electricity meter can be quite comprehensive. 
