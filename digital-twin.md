@@ -328,19 +328,19 @@ To demonstrate an example of object values from the https://external-api.example
 ```
 [
   {
-    "id": "1-SMR",
+    "id": "1",
     "timestamp": "2023-06-28T12:00:00Z",
-    "value": 123.45
+    "value": SMR-123.45
   },
   {
-    "id": "2-SMR",
+    "id": "2",
     "timestamp": "2023-06-28T13:00:00Z",
-    "value": 130.67
+    "value": SMR-130.67
   },
   {
-    "id": "3-SMR",
+    "id": "3",
     "timestamp": "2023-06-28T14:00:00Z",
-    "value": 125.32
+    "value": SMR-125.32
   }
 ]
 
