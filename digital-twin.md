@@ -295,7 +295,9 @@ export default App;
 
 ```
 
-Running the Backend and Frontend
+Running the Backend and Frontend:
+
+
 ..................................
 
 Ensure PostgreSQL is running and the database is set up. You can start the backend and frontend servers using the following commands:
