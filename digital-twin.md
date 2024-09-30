@@ -328,17 +328,17 @@ To demonstrate an example of object values from the https://external-api.example
 ```
 [
   {
-    "id": "1",
+    "id": "1-SMR",
     "timestamp": "2023-06-28T12:00:00Z",
     "value": 123.45
   },
   {
-    "id": "2",
+    "id": "2-SMR",
     "timestamp": "2023-06-28T13:00:00Z",
     "value": 130.67
   },
   {
-    "id": "3",
+    "id": "3-SMR",
     "timestamp": "2023-06-28T14:00:00Z",
     "value": 125.32
   }
