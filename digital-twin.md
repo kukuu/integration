@@ -232,6 +232,7 @@ export const getReadings = async () => {
 
 12. Create a component to display readings (src/components/Readings.tsx):
 
+```
 import React, { useEffect, useState } from 'react';
 import { getReadings } from '../services/api';
 
