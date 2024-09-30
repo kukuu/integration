@@ -389,7 +389,7 @@ export const fetchMeterReadings = async (): Promise<MeterReading[]> => {
 ```
 
 3. Frontend (React, TypeScript)
-No changes needed here, as the frontend is already set up to fetch and display the meter readings from the backend.
+No changes needed here (Layout), as the frontend is already set up to fetch and display the meter readings from the backend.
 
 4. Running the Application
 
