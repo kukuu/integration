@@ -12,6 +12,7 @@ This setup can be extended with more features, error handling, database interact
 
 ## Coding Steps
 
+The metre reading values must  automatically update between every 30 seconds to 30 minutes. Should be part of an environmental variable which can easily be configured.
 
 ### Backend (Node.js with Express)
 
