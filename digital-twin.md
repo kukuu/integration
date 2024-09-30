@@ -215,7 +215,7 @@ npm install axios
 ```
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://localhost:5000/api'; //Move this into .env
 
 export const getReadings = async () => {
   try {
