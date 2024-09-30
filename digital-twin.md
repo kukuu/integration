@@ -396,17 +396,21 @@ No changes needed here (Layout), as the frontend is already set up to fetch and 
 i. Backend
 In the meter-readings-backend directory:
 
+```
 
-tsc
-node dist/index.js
+tsc node dist/index.js
 
+```
 
 ii. Frontend
 In the meter-readings-frontend directory:
 
+
+```
+
 npm start
 
-
+``` 
 5. Summary:
 
 Navigate to http://localhost:3000 in your browser to see the meter readings displayed. The frontend will display the mock readings provided by the backend.
