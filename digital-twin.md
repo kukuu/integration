@@ -210,7 +210,7 @@ cd frontend
 npm install axios
 
 ```
-11. Create a service to fetch readings (src/services/api.ts):
+11. Create a service to fetch readings (src/services/api.ts) from the backend:
 
 
 ```
