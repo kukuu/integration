@@ -28,6 +28,7 @@ _Example_: For a jet engine, the Digital Thread would trace data from its initia
 
 
 **Analogy**
+
 Imagine a Digital Twin as a virtual mirror image of a car you own, which tracks its condition, mileage, fuel levels, and real-time performance. You can run simulations on this digital replica to see how it would perform with different tires or in harsh weather.
 The Digital Thread, on the other hand, is like a dossier that contains all the information about that car—its design specs, manufacturing details, parts list, maintenance history, and any previous incidents—providing a full history from the moment it was conceptualized to its current state.
 In essence, the Digital Twin is more focused on real-time representation and optimization, while the Digital Thread is about data continuity and lifecycle management. When used together, they provide a comprehensive digital representation and management strategy for complex systems.
