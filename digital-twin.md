@@ -9,7 +9,9 @@ _Purpose_: Digital Twins are used to replicate physical entities and simulate th
 
 
 _Components_: Digital Twins can be complex, integrating sensors, historical data, real-time monitoring, and artificial intelligence to provide insights on the physical system.
-Use Cases: Digital Twins are widely used in aerospace (e.g., monitoring airplane engines), automotive (vehicle design and testing), and smart cities (optimizing energy usage and urban planning).
+
+_
+Use Cases:_ Digital Twins are widely used in aerospace (e.g., monitoring airplane engines), automotive (vehicle design and testing), and smart cities (optimizing energy usage and urban planning).
 Example: A car manufacturer uses a Digital Twin to simulate the performance of an engine, factoring in real-time data from sensors in the physical engine. This helps engineers identify issues early and test modifications virtually before making changes to the actual engine.
 
 2. Digital Thread
