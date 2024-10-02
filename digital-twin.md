@@ -10,16 +10,18 @@ _Purpose_: Digital Twins are used to replicate physical entities and simulate th
 
 _Components_: Digital Twins can be complex, integrating sensors, historical data, real-time monitoring, and artificial intelligence to provide insights on the physical system.
 
-_
-Use Cases:_ Digital Twins are widely used in aerospace (e.g., monitoring airplane engines), automotive (vehicle design and testing), and smart cities (optimizing energy usage and urban planning).
+_Use Cases_: Digital Twins are widely used in aerospace (e.g., monitoring airplane engines), automotive (vehicle design and testing), and smart cities (optimizing energy usage and urban planning).
 Example: A car manufacturer uses a Digital Twin to simulate the performance of an engine, factoring in real-time data from sensors in the physical engine. This helps engineers identify issues early and test modifications virtually before making changes to the actual engine.
 
 2. Digital Thread
 A Digital Thread is a communication framework that integrates data across the entire product lifecycle, providing a holistic view of the product's journey from design to manufacturing and even post-sale support.
 
 _Purpose:_ It enables seamless data flow and traceability across traditionally siloed systems and processes. This interconnected data helps create a comprehensive view of the product at every stage.
-Components: The Digital Thread encompasses the entire lifecycle of a product, connecting CAD (design), PLM (Product Lifecycle Management), ERP (Enterprise Resource Planning), and CRM (Customer Relationship Management) systems.
-Use Cases: Digital Thread helps track the evolution of a product over time, supports continuous improvements, and ensures that any change or issue is logged and accessible to stakeholders throughout the supply chain.
+
+_Components_: The Digital Thread encompasses the entire lifecycle of a product, connecting CAD (design), PLM (Product Lifecycle Management), ERP (Enterprise Resource Planning), and CRM (Customer Relationship Management) systems.
+
+
+_Use Cases:_ Digital Thread helps track the evolution of a product over time, supports continuous improvements, and ensures that any change or issue is logged and accessible to stakeholders throughout the supply chain.
 
 ## Smart Meter Application System (Electricity/Energy)
 Creating a full-stack application with a Node.js backend and a React frontend that displays readings from an electricity meter can be quite comprehensive. 
