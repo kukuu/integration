@@ -23,6 +23,9 @@ _Components_: The Digital Thread encompasses the entire lifecycle of a product, 
 
 _Use Cases:_ Digital Thread helps track the evolution of a product over time, supports continuous improvements, and ensures that any change or issue is logged and accessible to stakeholders throughout the supply chain.
 
+
+_Example_: For a jet engine, the Digital Thread would trace data from its initial design, through manufacturing, testing, and delivery, and continue capturing data on its in-field performance and maintenance. If a problem is identified in the field, the Digital Thread helps trace the issue back to a specific production batch or design decision, enabling quick root-cause analysis and resolution.
+
 ## DT Smart Meter Application System (Electricity/Energy)
 Creating a full-stack application with a Node.js backend and a React frontend that displays readings from an electricity meter can be quite comprehensive. 
 Here’s a simplified version of the solution using TypeScript, Node.js, Express, React, and PostgreSQL.
