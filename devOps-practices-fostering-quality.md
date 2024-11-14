@@ -22,7 +22,7 @@ Continuous Delivery/Deployment (CD)
 
 4. Infrastructure as Code (IaC): Managing infrastructure through code enables environments to be created, modified, and destroyed in a consistent, repeatable way. IaC practices make environment provisioning quicker and more reliable, facilitating experimentation and scaling with minimal risk.
    
-5. Microservices: A Microservices architecture refers to an application which is constructed from a number of independent services called Microservices. Each microservice is a self-contained module that performs a discrete group of functions:
+5. Microservices: A Microservices architecture refers to an application which is constructed from a number of independent services called Microservices. Each microservice is a self-contained module that performs a discrete group of functions - https://github.com/kukuu/microservices .
 
 6. Monitoring and Logging: Effective monitoring and logging allow teams to observe application and infrastructure performance in real time. This feedback loop helps in detecting issues proactively, understanding user behavior, and identifying potential areas for improvement. Tools like Prometheus, Grafana, and ELK (Elasticsearch, Logstash, Kibana) are commonly used to visualize metrics and logs.
 
