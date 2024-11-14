@@ -1,6 +1,6 @@
 
 
-# DevOps practices to Continuous improvement?
+# DevOps practices to Continuous improvement.
 DevOps practices that foster continuous improvement focus on creating a culture of:
 
 i. Ongoing feedback
