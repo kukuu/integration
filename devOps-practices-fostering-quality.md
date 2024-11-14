@@ -21,13 +21,15 @@ Continuous Delivery/Deployment (CD)
 
 
 4. Infrastructure as Code (IaC): Managing infrastructure through code enables environments to be created, modified, and destroyed in a consistent, repeatable way. IaC practices make environment provisioning quicker and more reliable, facilitating experimentation and scaling with minimal risk.
+   
+5. Microservices
+
+6. Monitoring and Logging: Effective monitoring and logging allow teams to observe application and infrastructure performance in real time. This feedback loop helps in detecting issues proactively, understanding user behavior, and identifying potential areas for improvement. Tools like Prometheus, Grafana, and ELK (Elasticsearch, Logstash, Kibana) are commonly used to visualize metrics and logs.
 
 
-5. Monitoring and Logging: Effective monitoring and logging allow teams to observe application and infrastructure performance in real time. This feedback loop helps in detecting issues proactively, understanding user behavior, and identifying potential areas for improvement. Tools like Prometheus, Grafana, and ELK (Elasticsearch, Logstash, Kibana) are commonly used to visualize metrics and logs.
+7. Blameless Postmortems: After an incident, a blameless postmortem encourages teams to analyze what went wrong without focusing on individual errors. Instead, they look at process improvements and ways to prevent similar issues in the future. This fosters a culture of learning and encourages teams to take calculated risks to improve.
 
+Rollback Mechanism: Plan for a rollback strategy in case of unexpected issues or failures during deployment. This could involve automatically rolling back to a previous version or fixing the problem and redeploying. Use version control systems like Git to keep track of code changes and easily revert or switch between different versions.
 
-6. Blameless Postmortems: After an incident, a blameless postmortem encourages teams to analyze what went wrong without focusing on individual errors. Instead, they look at process improvements and ways to prevent similar issues in the future. This fosters a culture of learning and encourages teams to take calculated risks to improve.
-
-
-7. Feedback Loops and Retrospectives: Regular retrospectives and feedback loops between development, operations, and stakeholders ensure continuous refinement of processes, tools, and practices. This enables teams to assess what’s working well, what isn’t, and identify actionable steps for ongoing improvement.
+8. Feedback Loops and Retrospectives: Regular retrospectives and feedback loops between development, operations, and stakeholders ensure continuous refinement of processes, tools, and practices. This enables teams to assess what’s working well, what isn’t, and identify actionable steps for ongoing improvement.
 
