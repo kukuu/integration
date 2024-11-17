@@ -7,7 +7,7 @@ They require knowledge in systems integration, API design and knowledge of the t
 Here are some common integration backend tasks: 
  
 - API Development: 
-Creating backend APIs (Application Programming Interfaces) that define the protocols, data formats, and operations required for communication between different systems. This involves designing and implementing RESTful APIs, SOAP APIs, GraphQL APIs, or other types of APIs based on the integration requirements.
+Creating backend APIs (Application Programming Interfaces) that define the protocols, data formats, and operations required for communication between different systems. This involves designing and implementing RESTful APIs, SOAP APIs, GraphQL APIs, or other types of APIs based on the integration requirements. 
 
 -  Data Transformation and Mapping:
 Converting data formats, structures, and representations to ensure compatibility between different systems. This may involve transforming data from one schema to another, mapping fields between systems, or performing data validation and cleansing. ORMs are versatile as middlewares in ETL tasks.
