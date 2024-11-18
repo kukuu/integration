@@ -179,7 +179,6 @@ ii. The aws_instance resource relies on the aws_subnet (subnet_id = aws_subnet.e
 
 These dependencies ensure that resources are created in the proper order and in a consistent, reliable manner.
 
-Summary
 By leveraging various types of automated tests (unit, integration, API, etc.), DevOps pipelines can ensure high-quality releases. Infrastructure as Code enables consistent, scalable, and efficient infrastructure management, with Terraform and Ansible as popular tools. By defining dependencies in IaC files, DevOps teams achieve precise control over infrastructure setup, fostering a reliable and repeatable deployment process.
 
 
