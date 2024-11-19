@@ -5,7 +5,7 @@ They require knowledge in systems integration, API design and knowledge of the t
 
 ## Common integration backend tasks: 
 Here are some common integration backend tasks: 
- 
+  
 - API Development: 
 Creating backend APIs (Application Programming Interfaces) that define the protocols, data formats, and operations required for communication between different systems. This involves designing and implementing RESTful APIs, SOAP APIs, GraphQL APIs, or other types of APIs based on the integration requirements. 
 
