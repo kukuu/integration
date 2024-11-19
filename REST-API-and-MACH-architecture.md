@@ -38,3 +38,5 @@ ELK Stack (Elasticsearch, Logstash, Kibana): Often used to log and visualize RES
 Advantages of Using REST APIs in MACH Architecture
 
 These tools and technologies collectively help in building, managing, testing, and securing REST APIs, which are the backbone of MACH-based applications and services.
+
+
