@@ -45,7 +45,7 @@ iii. System Features:
 
 - Non-Functional Requirements:
   
-  i. Scalability: Handle millions of search requests and bookings per second.
+i. Scalability: Handle millions of search requests and bookings per second.
 
 ii. Reliability: Ensure data consistency and failover mechanisms.
 
