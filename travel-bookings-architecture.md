@@ -156,3 +156,14 @@ MONITORING AND LOGGING
 
 ```
 
+## Deep Dive into Search Mechanism
+
+i. Frontend Components:
+
+a. UI Components: Built using React.js with a responsive layout using Tailwind CSS.
+
+b. State Management: Redux Toolkit or Context API to manage state across components.
+
+c. Search Filtering: Dynamic filters like price sliders, date pickers, and keyword search.
+
+d. Debouncing and Throttling: Optimized search queries to avoid overloading servers.
