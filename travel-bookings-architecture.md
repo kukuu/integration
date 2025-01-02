@@ -56,6 +56,7 @@ v. Observability: Logging, monitoring, and alerts.
 
 ## High-Level Architecture Diagram
 
+```
 
 +-----------------------------------------------------+
 |                     Client Side                     |
@@ -97,4 +98,4 @@ v. Observability: Logging, monitoring, and alerts.
 +-----------------------------------------------------+
 
 
-
+```
