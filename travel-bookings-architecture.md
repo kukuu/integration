@@ -167,3 +167,13 @@ ii. State Management: Redux Toolkit or Context API to manage state across compon
 iii. Search Filtering: Dynamic filters like price sliders, date pickers, and keyword search.
 
 iv. Debouncing and Throttling: Optimized search queries to avoid overloading servers.
+
+- Search APIs and Data Flow:
+
+i. API Gateway routes the request to the Search Service.
+
+ii. Search Service interacts with ElasticSearch for full-text and geo-spatial queries.
+
+iii. Redis Cache stores frequently accessed data to reduce database load.
+
+iv. Real-time updates are handled using WebSockets or GraphQL Subscriptions.
