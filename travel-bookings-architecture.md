@@ -177,3 +177,30 @@ ii. Search Service interacts with ElasticSearch for full-text and geo-spatial qu
 iii. Redis Cache stores frequently accessed data to reduce database load.
 
 iv. Real-time updates are handled using WebSockets or GraphQL Subscriptions.
+
+## Data Model
+
+- Entities:
+
+i. User
+
+ID, Name, Email, Password (hashed), Role.
+
+ii. Listing
+
+ID, Title, Description, Price, Ratings, Location (GeoJSON).
+
+
+iii. Booking
+
+ID, User ID, Listing ID, Date, Status.
+
+
+iv. Reviews
+
+ID, User ID, Listing ID, Rating, Comment.
+
+
+v. Payments
+
+ID, Booking ID, Payment Status, Transaction ID.
