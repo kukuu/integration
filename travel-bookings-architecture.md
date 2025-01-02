@@ -1,6 +1,6 @@
 # Travel Booking Website Architecture Design
 
-1. Clarification Questions: 
+## Clarification Questions: 
 
 i. Scope of the Platform - Should the platform focus only on accommodations, or should it include additional services like flights, activities, and car rentals?
 
