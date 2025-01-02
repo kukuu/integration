@@ -42,3 +42,17 @@ iii. System Features:
 
     d. Scalability to handle high traffic during peak seasons.
 
+
+- Non-Functional Requirements:
+  
+  i. Scalability: Handle millions of search requests and bookings per second.
+
+ii. Reliability: Ensure data consistency and failover mechanisms.
+
+iii. Performance: Fast response times (<200ms).
+
+iv. Security: Protect sensitive data and payment details.
+
+v. Observability: Logging, monitoring, and alerts.
+
+
