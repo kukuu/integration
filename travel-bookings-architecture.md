@@ -204,3 +204,16 @@ ID, User ID, Listing ID, Rating, Comment.
 v. Payments
 
 ID, Booking ID, Payment Status, Transaction ID.
+
+
+## Optimizations and Trade-offs
+
+i. Scalability: Use CDNs for static assets and auto-scaling clusters (Kubernetes) for backend services.
+
+ii. Caching: Leverage Redis for frequently searched data and Content Delivery Networks (CDNs).
+
+iii. Real-time Updates: Use WebSockets for live notifications and updates.
+
+iii. Security: Implement JWT-based token authentication, rate-limiting, and secure payment processing (PCI-DSS).
+
+iv. Monitoring: Deploy Prometheus and ELK for logs and system metrics.
