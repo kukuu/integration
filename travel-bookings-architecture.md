@@ -217,3 +217,8 @@ iii. Real-time Updates: Use WebSockets for live notifications and updates.
 iii. Security: Implement JWT-based token authentication, rate-limiting, and secure payment processing (PCI-DSS).
 
 iv. Monitoring: Deploy Prometheus and ELK for logs and system metrics.
+
+
+## Evaluation of Technologie
+
+
