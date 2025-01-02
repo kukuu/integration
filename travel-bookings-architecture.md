@@ -10,8 +10,7 @@ ii. Search Scope - Are we building a simple keyword-based search or adding advan
 
 iii. Real-time Updates - Should we support real-time availability updates and dynamic pricing?
 
-## Requirements
-- Functional Requirements:
+## Functional Requirements:
 
  i. User Features:
 
@@ -43,7 +42,7 @@ iii. System Features:
     d. Scalability to handle high traffic during peak seasons.
 
 
-- Non-Functional Requirements:
+## Non-Functional Requirements:
   
 i. Scalability: Handle millions of search requests and bookings per second.
 
@@ -54,5 +53,48 @@ iii. Performance: Fast response times (<200ms).
 iv. Security: Protect sensitive data and payment details.
 
 v. Observability: Logging, monitoring, and alerts.
+
+## High-Level Architecture Diagram
+
+
++-----------------------------------------------------+
+|                     Client Side                     |
+|                                                     |
+| +-----------------------------------------------+   |
+| |            React.js + Tailwind CSS            |   |
+| +-----------------------------------------------+   |
+|              ↓                     ↓                |
+| +----------------+            +-------------------+  |
+| | Authentication |            | State Management  |  |
+| | (Auth0, OAuth) |            | (Redux/RTK Query) |  |
+| +----------------+            +-------------------+  |
+|              ↓                     ↓                |
+| +------------------------------------------------+  |
+| |               Search Module (Frontend)         |  |
+| | - Search filters, UI elements                  |  |
+| | - Data fetching via API                        |  |
+| +------------------------------------------------+  |
++-------------------↓---------------------------------+
+                Backend API Gateway
++-----------------------------------------------------+
+|                 Backend Services                    |
+|                                                     |
+| +-----------------+   +-------------------------+   |
+| | Authentication  |   | Search Service          |   |
+| | JWT/OAuth2.0    |   | (Filters, Ranking, etc) |   |
+| +-----------------+   +-------------------------+   |
+|                 ↓                     ↓             |
+| +----------------------------+  +-----------------+ |
+| | Booking Service            |  | Pricing Service | |
+| | (Reservations, Payments)   |  | Dynamic Pricing | |
+| +----------------------------+  +-----------------+ |
+|                 ↓                     ↓             |
+| +-------------------------------------------------+ |
+| | Database Layer: PostgreSQL, Redis (Cache)       | |
+| +-------------------------------------------------+ |
+|                 ↓                                 |
+|      Monitoring (ELK, Prometheus, Grafana)        |
++-----------------------------------------------------+
+
 
 
