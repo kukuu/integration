@@ -10,3 +10,35 @@ ii. Search Scope - Are we building a simple keyword-based search or adding advan
 
 iii. Real-time Updates - Should we support real-time availability updates and dynamic pricing?
 
+## Requirements
+- Functional Requirements:
+
+i. User Features:
+
+    a. Register and log in with secure authentication.
+
+    b. Search accommodations based on filters (location, dates, number of guests).
+
+    c. View accommodation details and reviews.
+
+    d. Make a reservation and receive confirmation.
+
+    e. View booking history and manage bookings.
+
+ii. Admin Features:
+
+    a. Manage property listings (CRUD operations).
+
+    b. Monitor reservations and customer activity.
+
+
+iii. System Features:
+
+    a. Real-time search results and price updates.
+
+    b. Payment gateway integration.
+
+    c. Reviews and ratings.
+
+    d. Scalability to handle high traffic during peak seasons.
+
