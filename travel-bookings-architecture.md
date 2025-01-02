@@ -99,3 +99,60 @@ v. Observability: Logging, monitoring, and alerts.
 
 
 ```
+
+## Low-Level Architecture
+
+
+```
+
+
+CLIENT SIDE (React + Redux + Tailwind CSS)
++-----------------------------------------------+
+|           UI Components                       |
+| - Search Bar                                  |
+| - Date Picker                                 |
+| - Filters: Price, Location, Ratings           |
++-----------------------------------------------+
+|           State Management                    |
+| - Centralized Store with Redux                |
+| - Data Fetching via RTK Query or Axios        |
++-----------------------------------------------+
+|           Search Module                       |
+| - Auto-suggestions (ElasticSearch Integration)|
+| - Real-time API Calls                         |
+| - Debouncing and Throttling to optimize calls |
++-----------------------------------------------+
+
+BACKEND SERVICES (Node.js/Express.js, GraphQL)
++-------------------------------------------------+
+|   API Gateway                                   |
+| - Authentication Middleware (JWT/OAuth)         |
+| - Rate Limiting (NGINX or API Gateway policies) |
++-------------------------------------------------+
+|   Search Service                                |
+| - Full-Text Search with ElasticSearch           |
+| - Geo-Spatial Search                            |
+| - Ranking Algorithms (Relevance & Popularity)   |
++-------------------------------------------------+
+|   Booking Service                               |
+| - Handles reservations and payments             |
+| - Real-time seat availability with Redis Cache  |
++-------------------------------------------------+
+|   Pricing Service                               |
+| - Dynamic pricing algorithms based on traffic   |
+| - Third-party API for pricing comparison        |
++-------------------------------------------------+
+|   Database Layer                                |
+| - PostgreSQL (Structured data for bookings)     |
+| - Redis (Caching search results)                |
++-------------------------------------------------+
+
+MONITORING AND LOGGING
++-------------------------------------------------+
+| - Prometheus for Metrics                        |
+| - ELK for Logs                                  |
+| - Grafana for Dashboards                        |
++-------------------------------------------------+
+
+```
+
