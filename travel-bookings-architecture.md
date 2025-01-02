@@ -13,7 +13,7 @@ iii. Real-time Updates - Should we support real-time availability updates and dy
 ## Requirements
 - Functional Requirements:
 
-i. User Features:
+ i. User Features:
 
     a. Register and log in with secure authentication.
 
