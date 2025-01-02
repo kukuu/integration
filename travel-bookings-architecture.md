@@ -221,4 +221,4 @@ iv. Monitoring: Deploy Prometheus and ELK for logs and system metrics.
 
 ## Evaluation of Technologie
 
-
+https://github.com/kukuu/integration/blob/main/search-technologies-4-consideration.png
