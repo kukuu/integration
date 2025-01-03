@@ -4,9 +4,7 @@ In the context of front end system design, the systems to design tend to be prod
 
 - Start by understanding the Requirements, defining the high level Architecture and the Data Model. Then define the Interfaces between the components in the product and highlight any Optimizations and dive deep into specific areas that require attention.
 
-- The RADIO Framework
-
-https://www.greatfrontend.com/front-end-system-design-playbook/framework
+- The RADIO Framework: https://www.greatfrontend.com/front-end-system-design-playbook/framework
 
 
 i. Requirements exploration: Understand the problem thoroughly and determine the scope by asking a number of clarifying questions.
