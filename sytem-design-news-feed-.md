@@ -53,3 +53,15 @@ iii. Feed UI: Contains a list of feed posts and the UI for composing new posts.
 iv. Feed posts: Presents the data for a feed post and contains buttons to interact with the post (like/react/share).
 
 v. Post composer: WYSIWYG (what you see is what you get) editor for users to create new feed posts.
+
+## Rendering approach
+
+Traditional web applications have multiple choices on where to render the content, whether to render on the server or the client.
+
+i. Server-side rendering (SSR): Rendering the HTML on the server side, which is the most traditional way. Best for static content that require SEO and does not require heavy user interaction. Websites like blogs, documentation sites, e-commerce websites are built using SSR.
+
+ii. Client-side rendering (CSR): Rendering in the browser, by dynamically adding DOM elements into the page using JavaScript. Best for interactive content. Applications like dashboards, chat apps are built using CSR.
+
+Interestingly, news feed applications are somewhere in-between, there's a good amount of static content but they also require interaction. This hybrid approach  gives the best of both worlds: a fast initial load with SSR then hydrating the page to attach event listeners for user interactions. Subsequent content (e.g. more posts added once the user reaches the end of their feed) and page navigation will use CSR.
+
+Modern UI JavaScript frameworks like React and Vue, along with meta frameworks like Next.js and Nuxt support this rendering strategy.
