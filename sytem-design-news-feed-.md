@@ -106,7 +106,7 @@ iv. Stale feeds - It's not uncommon for users to leave their news feed applicati
 
 Another approach is to automatically append new feed posts to the top of the feed, but that might not be desired and extra care has to be made in order not to affect the scroll position.
 
-## Delivering data-driven dependencies only when needed
+ v. Delivering data-driven dependencies only when needed
 
 
 News feed posts can come in many different formats (text, image, videos, polls, etc) and each post requires custom rendering code. In reality, Facebook feed supports over 50 different post formats!
@@ -137,3 +137,28 @@ Facebook fetches data from the server using Relay, which is a JavaScript-based G
 
 
 ```
+
+vi. Rendering images
+
+Since there can be images in a feed post, we can also briefly discuss some image optimization techniques:
+
+a. Content Delivery Network (CDN): Use a (CDN) to host and serve images for faster loading performance.
+
+b. Modern image formats: Use modern image formats such as WebP which provides superior lossless and lossy image compression.
+<img>s should use proper alt text
+
+c. Facebook provides alt text for user-uploaded images by using Machine Learning and Computer Vision to process the images and generate a description.
+
+d. Generative AI models are also very good at doing that these days.
+
+e. Image loading based on device screen properties
+
+f. Send the browser dimensions in the feed list requests so that server can decide what image size to return.
+
+g. Use srcset if there are image processing (resizing) capabilities to load the most suitable image file for the current viewport.
+
+h. Adaptive image loading based on network speed
+
+i. Devices with good internet connectivity/on WiFi: Prefetch offscreen images that are not in the viewport yet but about to enter viewport.
+
+j. Poor internet connection: Render a low-resolution placeholder image and require users to explicitly click on them to load the high-resolution image.
