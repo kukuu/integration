@@ -5,20 +5,19 @@ In the context of front end system design, the systems to design tend to be prod
 - Start by understanding the Requirements, defining the high level Architecture and the Data Model. Then define the Interfaces between the components in the product and highlight any Optimizations and dive deep into specific areas that require attention.
 
 - The RADIO Framework
-  i. Requirement and Clarification questions
 
-  ii. Architecture (High Level, then Low Level)
+i. Requirements exploration: Understand the problem thoroughly and determine the scope by asking a number of clarifying questions.
 
-  iii. Data Model
+ii. Architecture / High-level design: Identify the key components of the product and how they are related to each other.
 
-  iv. Interfaces and interactions between the Components (API/Controller/Request, Response, process Flow)
+iii. Data model: Describe the various data entities, the fields they contain and which component(s) they belong to.
 
-  v. Optimisation
+iv. Interface definition (API): Define the interface (API) between components in the product, functionality of each API, their parameters and responses.
+
+v. Optimizations and deep dive: Discuss about possible optimization opportunities and specific areas of interest when building the product.
   
-- Auto Complete
+- Products / Sytems
+  
+  i. Auto Complete : https://www.greatfrontend.com/questions/system-design/autocomplete 
 
-https://www.greatfrontend.com/questions/system-design/autocomplete 
-
-- Travel Booking
-
-  https://github.com/DataSolutionSoftware/travel-bookings-architecture
+  ii. Travel Booking : https://github.com/DataSolutionSoftware/travel-bookings-architecture
