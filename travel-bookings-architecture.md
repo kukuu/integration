@@ -16,6 +16,11 @@ v. Are there specific technologies or frameworks already in use?
 
 vi. How does this service interact with others (synchronous or asynchronous)?
 
+vii. What devices will this component be used on?
+
+viii. Do we need to support fuzzy search?
+
+
 ## Functional Requirements:
 
  i. User Features:
