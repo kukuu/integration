@@ -32,6 +32,10 @@ The feed poat should contain  a list of feed posts users can interact with.
 
 Not a priority, but a good mobile experience would be nice.
 
+## Wireframe
+
+![image](https://github.com/kukuu/integration/blob/main/news-feed-wireframe-sketch.png)
+
 ## Architecture / high-level design
 
 ![image](https://github.com/kukuu/integration/blob/main/news-feed-architecture.png)
