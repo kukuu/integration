@@ -10,6 +10,12 @@ ii. Search Scope - Are we building a simple keyword-based search or adding advan
 
 iii. Real-time Updates - Should we support real-time availability updates and dynamic pricing?
 
+iv. What are the most critical SLAs for this system (e.g., latency, availability)?
+
+v. Are there specific technologies or frameworks already in use?
+
+vi. How does this service interact with others (synchronous or asynchronous)?
+
 ## Functional Requirements:
 
  i. User Features:
