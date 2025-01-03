@@ -162,3 +162,36 @@ h. Adaptive image loading based on network speed
 i. Devices with good internet connectivity/on WiFi: Prefetch offscreen images that are not in the viewport yet but about to enter viewport.
 
 j. Poor internet connection: Render a low-resolution placeholder image and require users to explicitly click on them to load the high-resolution image.
+
+k. Timestamp rendering
+
+Timestamp rendering is a topic worth discussing because of a few issues: multilingual timestamps and stale relative timestamps.
+
+1. Multilingual timestamps: Globally popular sites like Facebook and Twitter have to ensure their UI works well for different languages. There are a few ways to support multilingual timestamps:
+
+2. Server returns the raw timestamp: Server returns the raw timestamp and the client renders in the user's language. This approach is flexible but requires the client to contain the grammar rules and translation strings for different languages, which can amount to significant JavaScript size depending on the number of supported languages,
+
+3. Server returns the translated timestamp: This requires processing on the server, but you don't have to ship timestamp formatting rules for various languages to the client. However, since translation is done on the server, clients cannot manipulate the timestamp on the client.
+
+4. Post truncation
+Truncate posts which have super long message content and reveal the rest behind a "See more" button.
+
+5. Intl API: Modern browsers can leverage Intl.DateTimeFormat() and Intl.RelativeTimeFormat() to transform a raw timestamp into translated datetime strings in the desired format.
+
+6. Relative timestamps can turn stale: If timestamps are displayed using a relative format (e.g. 3 minutes ago, 1 hour ago, 2 weeks ago, etc), recent timestamps can easily go stale especially for applications where users don't refresh the page. A timer can be used to constantly update the timestamps if they are recent (less than an hour old) such that any significant time that has passed will be reflected correctly.
+
+## Live comment updates
+Live updates for Facebook feed comments enhance user engagement and interaction by providing real-time visibility of new comments and updated reaction counts. This fosters a dynamic and responsive communication environment, encouraging users to actively participate in ongoing conversations without the need for manual refreshing. The immediacy of live updates contributes to increased user retention.
+
+The common ways to implement live updates on a client include:
+
+1. Short polling: Short polling is a technique in which the client repeatedly sends requests to the server at fixed intervals to check for updates. The connection is closed after each request, and the server responds immediately with the current state or any available updates. While short polling is straightforward to implement, it may result in higher network traffic and server load compared to the more advanced techniques mentioned below.
+
+ii. Long polling: Long polling extends on the idea of short polling by keeping the connection open until new data is available. While simpler to implement, it may introduce latency and increased server load compared to other approaches.
+
+
+iii. Server-Sent Events (SSE): SSE is a standard web technology that enables servers to push updates to web clients over a single HTTP connection. It's a simple and efficient mechanism for real-time updates, particularly well-suited for scenarios where updates are initiated by the server.
+WebSockets: WebSockets provide a full-duplex communication channel over a single, long-lived connection. This bidirectional communication allows both the server and the client to send messages to each other at any time. WebSockets are suitable for applications that require low latency and high interactivity.
+
+
+iv. HTTP/2 server push: With HTTP/2, the server can push updates to the client without waiting for the client to request them. While HTTP/2 server push is not as widely used as other methods for live updates, it can be an efficient solution in certain scenarios.
