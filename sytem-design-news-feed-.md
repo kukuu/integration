@@ -65,3 +65,22 @@ ii. Client-side rendering (CSR): Rendering in the browser, by dynamically adding
 Interestingly, news feed applications are somewhere in-between, there's a good amount of static content but they also require interaction. This hybrid approach  gives the best of both worlds: a fast initial load with SSR then hydrating the page to attach event listeners for user interactions. Subsequent content (e.g. more posts added once the user reaches the end of their feed) and page navigation will use CSR.
 
 Modern UI JavaScript frameworks like React and Vue, along with meta frameworks like Next.js and Nuxt support this rendering strategy.
+
+
+## Data model
+
+A news feed shows a list of posts fetched from the server, hence most of the data involved in this application will be server-originated data. The only client-side data needed is form state for input fields in the post composer.
+
+The most interesting API to talk about is the HTTP API to fetch a list of feed posts because the pagination approach is worth discussing. The HTTP API for fetching feed posts from the server has the basic details.
+
+## Which pagination to use.
+
+In a nutshell, the choice between offset-based pagination and cursor-based pagination largely depends on the data and requirements. Offset-based is simpler and better for static or small datasets where direct access to pages is important. Cursor-based is more efficient and reliable for large, dynamic datasets where the data sequence is important and changes frequently.
+
+For an infinite scrolling news feed where:
+
+i. New posts can be added frequently to the top of the feed.
+
+ii. Newly fetched posts are appended to the end of the feed.
+
+iii. Table size can grow pretty quickly.
