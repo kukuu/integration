@@ -11,7 +11,7 @@ i. Requirements exploration: Understand the problem thoroughly and determine the
 
 ii. Architecture / High-level design: Identify the key components of the product and how they are related to each other.
 
-iii. Data model: Describe the various data entities, the fields they contain and which component(s) they belong to.
+iii. Data model: Describe the various data entities, the fields they contain and which component(s) they belong to: https://www.greatfrontend.com/front-end-system-design-playbook/framework#:~:text=these%20tools%20beforehand.-,Data%20model,-Objective%3A%20Describe%20the
 
 iv. Interface definition (API): Define the interface (API) between components in the product, functionality of each API, their parameters and responses.
 
