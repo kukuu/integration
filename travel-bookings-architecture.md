@@ -242,3 +242,4 @@ iii. Use Prometheus and distributed tracing to  help  monitor system health/Heal
 ![image](https://github.com/kukuu/integration/blob/main/search-technologies-4-consideration.png)
 
 
+Further reading - https://github.com/kukuu/integration/blob/main/system-design-ii.pdf 
