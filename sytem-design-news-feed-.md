@@ -100,4 +100,10 @@ ii. Lazy loading resources within a page: Load non-critical resources only when 
 
 For a news feed application, there's only a single page, so page-level code splitting is not too relevant, however lazy loading can still be super useful for other purposes. Lazy loading is discussed in more detail under the feed post section as it's most relevant to the feed post UI.
 
+iii. Error states - Clearly display error states if any network requests have failed, or when there's no network connectivity.
+
+iv. Stale feeds - It's not uncommon for users to leave their news feed application open as a browser tab and not refresh it at all. It'd be a good idea to prompt the user to refresh or refetch the feed if the last fetched timestamp is more than a few hours ago, as there can be new posts and the loaded feed is considered stale. When a new feed is refetched, the current feed can be entirely removed from memory to free up memory space.
+
+Another approach is to automatically append new feed posts to the top of the feed, but that might not be desired and extra care has to be made in order not to affect the scroll position.
+
 
