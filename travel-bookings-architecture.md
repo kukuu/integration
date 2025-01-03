@@ -224,6 +224,17 @@ iii. Security: Implement JWT-based token authentication, rate-limiting, and secu
 
 iv. Monitoring: Deploy Prometheus and ELK for logs and system metrics.
 
+Testing and Validation
+
+## Validation:
+
+How you’d test and monitor the system in production:
+
+i. Use synthetic tests to simulate user traffic and validate performance.
+
+ii. Including Digital Twin and JMeter (load testing)
+
+iii. Use Prometheus and distributed tracing to  help  monitor system health/Health Check.
 
 ## Evaluation of Technologie
 
