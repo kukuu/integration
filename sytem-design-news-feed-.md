@@ -40,3 +40,16 @@ Not a priority, but a good mobile experience would be nice.
 
 ![image](https://github.com/kukuu/integration/blob/main/news-feed-architecture.png)
 
+## Component responsibilities
+
+i. Server: Provides HTTP APIs to fetch feed posts and to create new feed posts.
+
+ii. Controller: Controls the flow of data within the application and makes network requests to the server.
+
+iii. Client store: Stores data needed across the whole application. In the context of a news feed, most of the data in the store will be server-originated data needed by the feed UI.
+
+iii. Feed UI: Contains a list of feed posts and the UI for composing new posts.
+
+iv. Feed posts: Presents the data for a feed post and contains buttons to interact with the post (like/react/share).
+
+v. Post composer: WYSIWYG (what you see is what you get) editor for users to create new feed posts.
