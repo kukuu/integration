@@ -226,9 +226,9 @@ iv. Monitoring: Deploy Prometheus and ELK for logs and system metrics.
 
 Testing and Validation
 
-## Validation:
+## Testing and Validation:
 
-How you’d test and monitor the system in production:
+Testing and monitoring the system in production:
 
 i. Use synthetic tests to simulate user traffic and validate performance.
 
