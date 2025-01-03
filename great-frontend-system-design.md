@@ -21,3 +21,5 @@ v. Optimizations and deep dive: Discuss about possible optimization opportunitie
   i. Auto Complete : https://www.greatfrontend.com/questions/system-design/autocomplete 
 
   ii. Travel Booking : https://github.com/DataSolutionSoftware/travel-bookings-architecture
+
+https://www.greatfrontend.com/front-end-system-design-playbook/framework
