@@ -4,21 +4,25 @@ The proposed architecture prioritises scalability, security, and performance to 
 
 ## Clarification Questions: 
 
-i. Scope of the Platform - Should the platform focus only on accommodations, or should it include additional services like flights, activities, and car rentals?
+i. Scope of the Platform - (What are the main use cases we should be focusing on?) Should the platform focus only on accommodations, or should it include additional services like flights, activities, and car rentals?
 
 ii. Search Scope - Are we building a simple keyword-based search or adding advanced filters (e.g., price range, amenities, distance, ratings)?
 
 iii. Real-time Updates - Should we support real-time availability updates and dynamic pricing?
 
-iv. What are the most critical SLAs for this system (e.g., latency, availability)?
+iv. What are the most critical SLAs for this system: Message delivery or throughput (e.g., latency, availability)?
 
 v. Are there specific technologies or frameworks already in use?
 
 vi. How does this service interact with others (synchronous or asynchronous)?
 
-vii. What devices will this component be used on?
+vii. What devices will this component be used on? 
 
 viii. Do we need to support fuzzy search?
+
+ix. Is offline support necessary?
+
+x. Any  other functional or non-functional requirements that are missing?
 
 
 ## Functional Requirements:
