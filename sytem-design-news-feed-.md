@@ -6,7 +6,7 @@ The feed poat should contain  a list of feed posts users can interact with.
 
 - Implementation Guidelines: https://www.greatfrontend.com/questions/system-design/news-feed-facebook#requirements-exploration
 
-- Requirements exploration
+##  Requirements exploration
 
 1. What are the core features to be supported?
 
@@ -31,3 +31,8 @@ The feed poat should contain  a list of feed posts users can interact with.
 5. Will the application be used on mobile devices?
 
 Not a priority, but a good mobile experience would be nice.
+
+## Architecture / high-level design
+
+![image](https://github.com/kukuu/integration/blob/main/news-feed-architecture.png)
+
