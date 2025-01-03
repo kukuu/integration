@@ -84,3 +84,20 @@ i. New posts can be added frequently to the top of the feed.
 ii. Newly fetched posts are appended to the end of the feed.
 
 iii. Table size can grow pretty quickly.
+
+## General optimizations
+
+These optimizations are applicable to every section of the page.
+
+i. Code splitting JavaScript for faster performance: 
+As an application grows, the number of pages and features increase which will result in more JavaScript and CSS code needed to run the application. Code splitting is a technique to split code needed on a page into separate files so that they can be loaded in parallel or when they're needed.
+
+Generally, code splitting can be done on two levels:
+
+i. Split on the page level: Each page will only load the JavaScript and CSS needed on that page.
+
+ii. Lazy loading resources within a page: Load non-critical resources only when needed or after the initial render, such as code that's only needed lower down on the page, or code that's used only when interacted with (e.g. modals, dialogs).
+
+For a news feed application, there's only a single page, so page-level code splitting is not too relevant, however lazy loading can still be super useful for other purposes. Lazy loading is discussed in more detail under the feed post section as it's most relevant to the feed post UI.
+
+
