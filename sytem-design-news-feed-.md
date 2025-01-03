@@ -106,4 +106,34 @@ iv. Stale feeds - It's not uncommon for users to leave their news feed applicati
 
 Another approach is to automatically append new feed posts to the top of the feed, but that might not be desired and extra care has to be made in order not to affect the scroll position.
 
+## Delivering data-driven dependencies only when needed
 
+
+News feed posts can come in many different formats (text, image, videos, polls, etc) and each post requires custom rendering code. In reality, Facebook feed supports over 50 different post formats!
+
+One way to support all the post formats on the client is to have the client load the component JavaScript code for all possible formats upfront so that any kind of feed post format can be rendered. However, not all users' feed will contain all the post formats and and there will likely be a lot of unused JavaScript. With the large variety of feed post formats, loading the JavaScript code for all of them upfront is sure to cause performance issues.
+
+
+If only we could lazy load components depending on the data received! That's already possible but requires an extra network round-trip to lazy load the components after the data is fetched and we know the type of posts rendered.
+
+
+Facebook fetches data from the server using Relay, which is a JavaScript-based GraphQL client. Relay couples React components with GraphQL to allow React components to declare exactly which data fields are needed and Relay will fetch them via GraphQL and provide the components with data. Relay has a feature called data-driven dependencies via the @match and @module GraphQL directives, which fetches component code along with the respective type of data, effectively solving the excess components problem mentioned above without an extra network round-trip. You only load the relevant code when a particular format for a post is being shown.
+
+```
+// Sample GraphQL query to demonstrate data-driven dependencies.
+... on Post {
+  ... on TextPost {
+    @module('TextComponent.js')
+    contents
+  }
+  ... on ImagePost {
+    @module('ImageComponent.js')
+    image_data {
+      alt
+      dimensions
+    }
+  }
+}
+
+
+```
