@@ -3,7 +3,7 @@
 - The RADIO Framework
   i. Requirement and Clarification questions
 
-  ii. Architecture (High Level)
+  ii. Architecture (High Level, then Low Level)
 
   iii. DataLayer
 
