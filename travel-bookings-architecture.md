@@ -177,7 +177,7 @@ MONITORING AND LOGGING
 
 i. UI Components: Built using React.js with a responsive layout using Tailwind CSS.
 
-ii. State Management: Redux Toolkit or Context API to manage state across components.
+ii. State Management: Redux Toolkit, AXIOS or Context API to manage state across components. 
 
 iii. Search Filtering: Dynamic filters like auto-suggest, price sliders, date pickers, and keyword search.
 
