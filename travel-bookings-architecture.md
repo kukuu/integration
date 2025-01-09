@@ -31,7 +31,7 @@ x. Any  other functional or non-functional requirements that are missing?
 
     a. Register and log in with secure authentication.
 
-    b. Search accommodations based on filters (location, dates, number of guests).
+    b. Search accommodations based on filters (keyword,location, dates, number of guests).
 
     c. View accommodation details and reviews.
 
