@@ -1,6 +1,6 @@
 # System Design - News Feed
 
-The feed poat should contain  a list of feed posts users can interact with.
+The feed post should contain  a list of feed posts users can interact with.
 
  - RADIO Framework https://www.greatfrontend.com/front-end-system-design-playbook/framework
 
