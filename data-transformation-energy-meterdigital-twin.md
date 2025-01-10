@@ -18,3 +18,40 @@ iv. Add ERROR handling and exceptions to the code.
 
 iii. Provide a batch processing code in Python that will send the readings in the Database to a Sponsored owner at an email address.
 
+## Steps and Best Practices for Data Transformation Using Python
+
+- Data Extraction:
+
+Load data from multiple spreadsheets (Excel files).
+Use libraries like pandas to efficiently read and manipulate data.
+Stream data live from sources where possible.
+Data Cleansing:
+
+- Handle missing or null values using imputation or removal.
+
+- Standardize data formats (e.g., date and time).
+
+- Remove duplicates or erroneous records.
+
+- Validate data integrity (e.g., check meter reading formats).
+
+- Transformation:
+
+i. Add a timestamp column to each record.
+Aggregate data as necessary (e.g., by date or by meter ID).
+Ensure consistent naming and data types.
+Data Storage:
+
+
+ii. Use pyodbc or SQLAlchemy to connect to a Windows/AZURE SQL database.
+Write transformed data into appropriate database tables.
+Archive live streaming readings into an archive folder every 30 days.
+SQL Segregation:
+
+iii. Write SQL queries to separate the 3 data sources into distinct database tables.
+
+- Batch Processing:
+
+i. Use batch processing techniques to send periodic data to the sponsored owner.
+
+ii.Automate email sending using Python libraries like smtplib or email.
