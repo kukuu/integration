@@ -55,3 +55,94 @@ iii. Write SQL queries to separate the 3 data sources into distinct database tab
 i. Use batch processing techniques to send periodic data to the sponsored owner.
 
 ii.Automate email sending using Python libraries like smtplib or email.
+
+### Simplified Python Code - Data Transformation:
+
+```
+import pandas as pd
+import datetime
+import os
+import pyodbc
+import shutil
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import smtplib
+
+# Step 1: Data Extraction and Reading
+def read_live_stream(file_path):
+    df = pd.read_excel(file_path)  # Reading Excel file
+    df['Timestamp'] = datetime.datetime.now()  # Add timestamp
+    return df
+
+# Step 2: Data Cleansing
+def clean_data(df):
+    df = df.drop_duplicates()
+    df = df.dropna()  # Remove rows with null values
+    return df
+
+# Step 3: Data Transformation
+def transform_data(df):
+    # Add any necessary transformations (e.g., data standardization)
+    return df
+
+# Step 4: Data Storage in SQL
+def store_data_in_sql(df, table_name, connection_string):
+    conn = pyodbc.connect(connection_string)
+    cursor = conn.cursor()
+
+    for _, row in df.iterrows():
+        cursor.execute(f"""
+            INSERT INTO {table_name} (MeterID, Reading, Timestamp)
+            VALUES (?, ?, ?)
+        """, row['MeterID'], row['Reading'], row['Timestamp'])
+    conn.commit()
+    conn.close()
+
+# Step 5: Archive Old Files
+def archive_files(source_folder, archive_folder, days=30):
+    for file in os.listdir(source_folder):
+        file_path = os.path.join(source_folder, file)
+        if os.path.isfile(file_path) and (datetime.datetime.now() - datetime.datetime.fromtimestamp(os.path.getmtime(file_path))).days > days:
+            shutil.move(file_path, archive_folder)
+
+# Step 6: Sending Batch Data via Email
+def send_email(subject, body, to_email, from_email, smtp_server, smtp_port, password):
+    msg = MIMEMultipart()
+    msg['From'] = from_email
+    msg['To'] = to_email
+    msg['Subject'] = subject
+    msg.attach(MIMEText(body, 'plain'))
+
+    server = smtplib.SMTP(smtp_server, smtp_port)
+    server.starttls()
+    server.login(from_email, password)
+    server.send_message(msg)
+    server.quit()
+
+# Example Usage
+if __name__ == "__main__":
+    # File paths and connection strings
+    live_stream_file = "live_stream.xlsx"
+    connection_string = "Driver={SQL Server};Server=server_name;Database=database_name;UID=user;PWD=password;"
+    source_folder = "./live_readings"
+    archive_folder = "./archive"
+
+    # Step 1-3: Read, Cleanse, and Transform Data
+    df = read_live_stream(live_stream_file)
+    df = clean_data(df)
+    df = transform_data(df)
+
+    # Step 4: Store Data in SQL
+    store_data_in_sql(df, "MeterReadings", connection_string)
+
+    # Step 5: Archive Files
+    archive_files(source_folder, archive_folder)
+
+    # Step 6: Send Batch Data via Email
+    email_subject = "Meter Readings Batch Report"
+    email_body = "The meter readings have been processed and stored in the database."
+    send_email(email_subject, email_body, "bob@btl.com", "youremail@example.com", "smtp.example.com", 587, "yourpassword")
+
+```
+### Example Dataset for the Spreadsheet
+
