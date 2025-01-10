@@ -199,4 +199,9 @@ while True:
 
 ```
 
+## Related Links
 
+-  https://digital-twin-v2-chi.vercel.app/
+-  https://github.com/kukuu/digital-twin-v2
+-  https://github.com/kukuu/integration/blob/main/digital-twin.md
+-  https://github.com/kukuu/integration/blob/main/digital-transformation-practices.md
