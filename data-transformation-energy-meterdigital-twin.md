@@ -1,5 +1,6 @@
 # Data Transformation - Digital Twin Energy Meter
 
+This architecture ensures scalable data transformation and storage while providing regular batch processing and reporting. It also implements an effective archival mechanism for older data.
 
 ## Problem Statement:
 i. Execute in steps and best practices data transformation techniques using Python in a use case for converting a multitude of spreadsheet data comprising electricity meter consumption readings, cleansing them and storing them in (Windows/AZURE SQL) a Database. 
@@ -146,5 +147,56 @@ if __name__ == "__main__":
 ```
 ### Example Dataset for the Spreadsheet
 
-![image](https://github.com/kukuu/integration/blob/main/digital-twin-smart-%20energy-sample-data.png)
+![image](https://github.com/kukuu/integration/blob/main/digital-twin-smart-%20energy-sample-data.png) 
+
+### SQL Query for Segregation
+
+```
+-- Separate data sources into different tables
+-- Table 1: Data Source A
+CREATE TABLE MeterReadings_A AS 
+SELECT * 
+FROM MeterReadings 
+WHERE MeterID LIKE 'SMR%34A';
+
+-- Table 2: Data Source B
+CREATE TABLE MeterReadings_B AS 
+SELECT * 
+FROM MeterReadings 
+WHERE MeterID LIKE 'SMR%34B';
+
+-- Table 3: Data Source C
+CREATE TABLE MeterReadings_C AS 
+SELECT * 
+FROM MeterReadings 
+WHERE MeterID LIKE 'SMR%34C';
+
+
+```
+
+### Batch Processing in Python
+
+To automate the batch processing, use a Python scheduler like schedule or cron (on Linux):
+
+```
+import schedule
+import time
+
+# Define a batch job
+def batch_job():
+    # Fetch data from SQL database and send it via email
+    email_subject = "Daily Meter Readings Report"
+    email_body = "Attached are the daily meter readings."
+    send_email(email_subject, email_body, "bob@btl.com", "youremail@example.com", "smtp.example.com", 587, "yourpassword")
+
+# Schedule the job to run daily at midnight
+schedule.every().day.at("00:00").do(batch_job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
+
+```
+
 
