@@ -146,3 +146,5 @@ if __name__ == "__main__":
 ```
 ### Example Dataset for the Spreadsheet
 
+![image](https://github.com/kukuu/integration/blob/main/digital-twin-smart-%20energy-sample-data.png)
+
