@@ -199,6 +199,46 @@ while True:
 
 ```
 
+## Summary Architecture Overview
+
+The architecture for the end-to-end development process of processing electricity meter consumption readings includes the following key components:
+
+- Data Ingestion Layer:
+
+Tools: Python Scripts, Scheduler (e.g., Cron Jobs or Airflow)
+
+Description: Python scripts read raw spreadsheet data (Excel/CSV files) from multiple sources. Data includes SMR89134A, SMR89134B, and SMR89134C records.
+
+- Data Transformation Layer:
+
+Tools: Python with Pandas and NumPy for data cleansing and transformation.
+Description: Clean and validate data to ensure it is consistent, structured, and timestamped for ingestion into the database (remove NULL values, duplicates and errorneous values, attach TIMESPAM).
+
+- Storage Layer:
+
+Tools: Relational Database (PostgreSQL/MySQL).
+
+Description: Store cleaned and timestamped data into three separate tables (for A, B, and C data sources).
+
+- Archival System:
+
+Tools: Python Script, File System (e.g., AWS S3 or Local Archive Folder).
+
+Description: Archive live data to a specified directory every 30 days for historical reference.
+
+- Batch Processing and Notification Layer:
+
+
+Tools: Python Script, SMTP (Simple Mail Transfer Protocol) for email delivery.
+
+Description: Generate periodic reports from the database and send the readings via email.
+
+Monitoring and Logging:
+
+Tools: Logging Frameworks (e.g., Python logging), Dashboard (e.g., Grafana or Kibana for metrics and alerts).
+
+Description: Track the health and success of the pipeline.
+
 ## Related Links
 
 -  https://digital-twin-v2-chi.vercel.app/
