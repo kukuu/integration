@@ -239,6 +239,163 @@ Tools: Logging Frameworks (e.g., Python logging), Dashboard (e.g., Grafana or Ki
 
 Description: Track the health and success of the pipeline.
 
+### Python Code: Attaching Timestamp and Archiving Readings
+
+1. Reading Data and Attaching Timestamps
+
+```
+import pandas as pd
+from datetime import datetime
+
+# Sample data creation
+data = {
+    "SMR89134A": [10, 15, 20, 25],
+    "SMR89134B": [30, 35, 40, 45],
+    "SMR89134C": [50, 55, 60, 65]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Add timestamp to each record
+df['timestamp'] = datetime.now()
+
+# Save data to a file for ingestion
+df.to_csv("meter_readings.csv", index=False)
+print("Data with timestamps:")
+print(df)
+
+
+```
+
+2. Archiving Data Every 30 Days
+
+```
+import os
+import shutil
+from datetime import datetime, timedelta
+
+# Define source and archive folder
+source_folder = "./live_data/"
+archive_folder = "./archive/"
+
+# Archive function
+def archive_readings():
+    current_time = datetime.now()
+    cutoff_time = current_time - timedelta(days=30)
+
+    # Iterate over files in the source folder
+    for file_name in os.listdir(source_folder):
+        file_path = os.path.join(source_folder, file_name)
+        
+        # Check file's last modified time
+        file_modified_time = datetime.fromtimestamp(os.path.getmtime(file_path))
+        if file_modified_time < cutoff_time:
+            # Move file to archive folder
+            shutil.move(file_path, os.path.join(archive_folder, file_name))
+            print(f"Archived: {file_name}")
+
+# Run the archiving function
+archive_readings()
+
+```
+
+### SQL Query: Segregating Data Sources
+
+```
+-- Create separate tables for the data sources
+CREATE TABLE meter_readings_a (
+    id SERIAL PRIMARY KEY,
+    reading FLOAT,
+    timestamp TIMESTAMP
+);
+
+CREATE TABLE meter_readings_b (
+    id SERIAL PRIMARY KEY,
+    reading FLOAT,
+    timestamp TIMESTAMP
+);
+
+CREATE TABLE meter_readings_c (
+    id SERIAL PRIMARY KEY,
+    reading FLOAT,
+    timestamp TIMESTAMP
+);
+
+-- Insert records into their respective tables
+INSERT INTO meter_readings_a (reading, timestamp)
+SELECT reading, timestamp FROM raw_readings WHERE source = 'A';
+
+INSERT INTO meter_readings_b (reading, timestamp)
+SELECT reading, timestamp FROM raw_readings WHERE source = 'B';
+
+INSERT INTO meter_readings_c (reading, timestamp)
+SELECT reading, timestamp FROM raw_readings WHERE source = 'C';
+
+```
+
+### Python Code: Batch Processing and Sending Email
+
+```
+import smtplib
+from email.mime.text import MIMEText
+import psycopg2
+
+# Database connection
+def fetch_readings():
+    connection = psycopg2.connect(
+        dbname="meter_db",
+        user="admin",
+        password="password",
+        host="localhost"
+    )
+    cursor = connection.cursor()
+    
+    # Fetch all readings
+    cursor.execute("SELECT * FROM meter_readings_a;")
+    readings_a = cursor.fetchall()
+    
+    cursor.execute("SELECT * FROM meter_readings_b;")
+    readings_b = cursor.fetchall()
+    
+    cursor.execute("SELECT * FROM meter_readings_c;")
+    readings_c = cursor.fetchall()
+    
+    connection.close()
+    return readings_a, readings_b, readings_c
+
+# Send email
+def send_email():
+    readings_a, readings_b, readings_c = fetch_readings()
+    
+    # Format the email content
+    email_content = f"""
+    Meter Readings Report:
+    ----------------------
+    Source A Readings: {readings_a}
+    Source B Readings: {readings_b}
+    Source C Readings: {readings_c}
+    """
+    
+    # Email setup
+    msg = MIMEText(email_content)
+    msg['Subject'] = "Meter Readings Report"
+    msg['From'] = "noreply@metering.com"
+    msg['To'] = "bob@btl.com"
+    
+    # Send email
+    with smtplib.SMTP('smtp.example.com', 587) as server:
+        server.starttls()
+        server.login("your_email@example.com", "your_password")
+        server.send_message(msg)
+        print("Email sent successfully!")
+
+# Run the batch process
+send_email()
+
+
+```
+
 ## Related Links
 
 -  https://digital-twin-v2-chi.vercel.app/
