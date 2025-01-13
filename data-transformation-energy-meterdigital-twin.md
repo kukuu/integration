@@ -396,6 +396,10 @@ send_email()
 
 ```
 
+## MMHHS Target Operating Model
+
+![image](https://github.com/kukuu/integration/blob/main/target-operating-model.png)
+
 ## Related Links
 
 -  https://digital-twin-v2-chi.vercel.app/
