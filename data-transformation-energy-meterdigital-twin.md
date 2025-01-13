@@ -21,12 +21,12 @@ iv. Add ERROR handling and exceptions to the code.
 
 iii. Provide a batch processing code (in Python) that will send the readings in the Database to a Sponsored owner at an email address.
 
-## Architecture
+## Architecture - DATA PIPELINE
 
 ```
-### DATA PIPELINE ARCHITECTURE
 
-# DATA INGESTION LAYER
+
+               DATA INGESTION LAYER
 +-------------------------------------------------+
 |   Input Sources                                 |
 | - Excel Files with Meter Consumption Data       |
@@ -37,8 +37,9 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 | - Python (Pandas, OpenPyXL for spreadsheets)    |
 | - Kafka or RabbitMQ for real-time streaming     |
 +-------------------------------------------------+
-
-# DATA TRANSFORMATION LAYER
+                    |
+            DATA TRANSFORMATION LAYER
+                                                   
 +-------------------------------------------------+
 |   Data Cleansing                                |
 | - Handle missing or invalid meter readings      |
@@ -52,8 +53,9 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 | - Python (NumPy, Pandas)                        |
 | - PySpark for large-scale processing            |
 +-------------------------------------------------+
-
-# STORAGE LAYER
+                  |
+            STORAGE LAYER
+                  |
 +-------------------------------------------------+
 |   Database                                      |
 | - PostgreSQL or MySQL for structured data       |
@@ -63,8 +65,9 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 |   Data Lake                                     |
 | - S3/Blob Storage for raw and transformed data  |
 +-------------------------------------------------+
-
-# ARCHIVAL SYSTEM
+                   |
+             ARCHIVAL SYSTEM
+                   |
 +-------------------------------------------------+
 |   Archival Process                              |
 | - Move data older than 30 days to archive folder|
@@ -74,8 +77,9 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 | - Python (Schedule/Crontab for automation)      |
 | - Cloud Storage (AWS S3, GCP Bucket)            |
 +-------------------------------------------------+
-
-# BATCH PROCESSING & NOTIFICATION LAYER
+                   |
+         BATCH PROCESSING & NOTIFICATION LAYER
+                   |
 +-------------------------------------------------+
 |   Scheduled Jobs                                |
 | - Batch export of data to stakeholders          |
@@ -89,8 +93,9 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 | - Python (smtplib, pandas for formatting emails)|
 | - Celery + RabbitMQ for batch processing        |
 +-------------------------------------------------+
-
-# MONITORING AND LOGGING
+                   |
+            MONITORING AND LOGGING
+                   |
 +-------------------------------------------------+
 |   Logging                                       |
 | - Track ingestion errors, transformation issues |
