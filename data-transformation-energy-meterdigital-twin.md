@@ -245,7 +245,8 @@ Tools: Python Script, SMTP (Simple Mail Transfer Protocol) for email delivery.
 
 Description: Generate periodic reports from the database and send the readings via email.
 
-Monitoring and Logging:
+
+- Monitoring and Logging:
 
 Tools: Logging Frameworks (e.g., Python logging), Dashboard (e.g., Grafana or Kibana for metrics and alerts).
 
