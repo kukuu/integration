@@ -21,7 +21,7 @@ iv. Add ERROR handling and exceptions to the code.
 
 iii. Provide a batch processing code (in Python) that will send the readings in the Database to a Sponsored owner at an email address.
 
-## Architecture - DATA PIPELINE
+## B - Architecture - DATA PIPELINE
 
 ```
 
@@ -150,7 +150,7 @@ Tools: Logging Frameworks (e.g., Python logging), Dashboard (e.g., Grafana or Ki
 Description: Track the health and success of the pipeline.
 
 
-## Steps and Best Practices for Data Transformation Using Python
+## C - Steps and Best Practices for Data Transformation Using Python
 
  #### Data Extraction / Ingestion:
 
@@ -198,7 +198,7 @@ i. Use batch processing techniques to send periodic data to the sponsored owner.
 ii.Automate email sending using Python libraries like smtplib or email.
 
 
-### Simplified Python Code - Data Transformation:
+### D - Simplified Python Code - Data Transformation:
 
 ```
 import pandas as pd
@@ -286,11 +286,11 @@ if __name__ == "__main__":
     send_email(email_subject, email_body, "bob@btl.com", "youremail@example.com", "smtp.example.com", 587, "yourpassword")
 
 ```
-### Example Dataset for the Spreadsheet
+### E -  Example Dataset for the Spreadsheet
 
 ![image](https://github.com/kukuu/integration/blob/main/digital-twin-smart-%20energy-sample-data.png) 
 
-### SQL Query for Segregation
+### F - SQL Query for Segregation
 
 ```
 -- Separate data sources into different tables
@@ -315,9 +315,9 @@ WHERE MeterID LIKE 'SMR%34C';
 
 ```
 
-### Batch Processing (Python)
+### G - Batch Processing (Python)
 
-To automate the batch processing, use a Python scheduler like schedule or cron (on Linux):
+i. Automate the batch processing, use a Python scheduler like schedule or cron (on Linux):
 
 ```
 import schedule
@@ -341,7 +341,7 @@ while True:
 ```
 
 
-### Attaching Timestamp and Archiving Readings (Python)
+ii.  Attach Timestamp and Archiving Readings (Python)
 
 1. Reading Data and Attaching Timestamps
 
@@ -402,7 +402,7 @@ archive_readings()
 
 ```
 
-### Segregating Data Sources (SQL Query)
+### F - Segregating Data Sources (SQL Query)
 
 ```
 -- Create separate tables for the data sources
@@ -436,7 +436,7 @@ SELECT reading, timestamp FROM raw_readings WHERE source = 'C';
 
 ```
 
-### Batch Processing and Sending Email (Python)
+### G - Batch Processing and Sending Email (Python)
 
 ```
 import smtplib
@@ -499,7 +499,7 @@ send_email()
 ```
 
 
-## Infrastructure
+## H - Infrastructure
 
 - Development Tools:
 
