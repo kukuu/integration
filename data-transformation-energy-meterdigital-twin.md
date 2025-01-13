@@ -59,9 +59,10 @@ iii. Archive live streaming readings into an archive folder every 30 days.
 
 #### SQL Segregation:
 
-iii. Write SQL queries to separate the 3 data sources into distinct database tables.
+i. Write SQL queries to separate the 3 data sources into distinct database tables.
 
-- Batch Processing:
+
+#### Batch Processing:
 
 i. Use batch processing techniques to send periodic data to the sponsored owner.
 
