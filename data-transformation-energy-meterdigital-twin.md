@@ -23,7 +23,7 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 
 ## Steps and Best Practices for Data Transformation Using Python
 
- #### Data Extraction:
+ #### Data Extraction / Ingestion:
 
 - Load data from multiple spreadsheets (Excel files).
 Use libraries like pandas to efficiently read and manipulate data.
