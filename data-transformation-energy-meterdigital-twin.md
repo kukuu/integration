@@ -21,6 +21,89 @@ iv. Add ERROR handling and exceptions to the code.
 
 iii. Provide a batch processing code (in Python) that will send the readings in the Database to a Sponsored owner at an email address.
 
+## Architecture
+
+```
+### DATA PIPELINE ARCHITECTURE
+
+# DATA INGESTION LAYER
++-------------------------------------------------+
+|   Input Sources                                 |
+| - Excel Files with Meter Consumption Data       |
+| - Real-time Streaming of Meter Readings         |
+| - API Endpoints for External Data Sources       |
++-------------------------------------------------+
+|   Tools                                         |
+| - Python (Pandas, OpenPyXL for spreadsheets)    |
+| - Kafka or RabbitMQ for real-time streaming     |
++-------------------------------------------------+
+
+# DATA TRANSFORMATION LAYER
++-------------------------------------------------+
+|   Data Cleansing                                |
+| - Handle missing or invalid meter readings      |
+| - Standardize timestamps and formats            |
++-------------------------------------------------+
+|   Data Transformation                           |
+| - Aggregate daily, weekly, and monthly readings |
+| - Create derived metrics (e.g., avg consumption)|
++-------------------------------------------------+
+|   Tools                                         |
+| - Python (NumPy, Pandas)                        |
+| - PySpark for large-scale processing            |
++-------------------------------------------------+
+
+# STORAGE LAYER
++-------------------------------------------------+
+|   Database                                      |
+| - PostgreSQL or MySQL for structured data       |
+| - Separate tables for sources A, B, and C       |
+| - Indexed columns for timestamp-based queries   |
++-------------------------------------------------+
+|   Data Lake                                     |
+| - S3/Blob Storage for raw and transformed data  |
++-------------------------------------------------+
+
+# ARCHIVAL SYSTEM
++-------------------------------------------------+
+|   Archival Process                              |
+| - Move data older than 30 days to archive folder|
+| - Compress files to reduce storage size         |
++-------------------------------------------------+
+|   Tools                                         |
+| - Python (Schedule/Crontab for automation)      |
+| - Cloud Storage (AWS S3, GCP Bucket)            |
++-------------------------------------------------+
+
+# BATCH PROCESSING & NOTIFICATION LAYER
++-------------------------------------------------+
+|   Scheduled Jobs                                |
+| - Batch export of data to stakeholders          |
+| - Generate and email reports (PDF/CSV)          |
++-------------------------------------------------+
+|   Notification System                           |
+| - Send reports to bob@btl.com via SMTP          |
+| - Integrate email notifications with SES/SendGrid|
++-------------------------------------------------+
+|   Tools                                         |
+| - Python (smtplib, pandas for formatting emails)|
+| - Celery + RabbitMQ for batch processing        |
++-------------------------------------------------+
+
+# MONITORING AND LOGGING
++-------------------------------------------------+
+|   Logging                                       |
+| - Track ingestion errors, transformation issues |
+| - Log storage/archival successes or failures    |
++-------------------------------------------------+
+|   Monitoring                                    |
+| - Prometheus for pipeline metrics               |
+| - Grafana for real-time dashboards and alerts   |
++-------------------------------------------------+
+
+
+```
+
 ## Steps and Best Practices for Data Transformation Using Python
 
  #### Data Extraction / Ingestion:
