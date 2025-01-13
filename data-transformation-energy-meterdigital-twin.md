@@ -2,7 +2,7 @@
 
 This architecture ensures scalable data transformation and storage while providing regular batch processing and reporting. It also implements an effective archival mechanism for older data.
 
-## Task:
+## A - Task:
 i. This work provides execution  steps and best practices in data transformation techniques using Python in a use case for converting a multitude of spreadsheet data comprising electricity meter consumption readings, cleansing them and storing them in a Database. 
 
 Using Python for ensuring data ingestion, cleansing, transformation and for batch processing multiple Spreadsheet as data source ( including live streaming from an asynchronous distributed system via an API). Example of the format of sample data is provided below:
