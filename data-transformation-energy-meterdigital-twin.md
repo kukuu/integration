@@ -409,6 +409,38 @@ send_email()
 
 ```
 
+
+## Infrastructure Required
+
+- Development Tools:
+
+i. Python (with libraries: pandas, numpy, sqlalchemy, smtplib)
+
+ii. Jupyter Notebook for testing transformations.
+
+iii. Git for version control.
+
+
+- Storage and Database:
+
+i. PostgreSQL/MySQL for data storage.
+
+ii. Local file storage or AWS S3 bucket for archiving.
+
+
+- Task Scheduler:
+
+i. Apache Airflow or Cron for scheduling periodic tasks (data ingestion, archival).
+
+- Email Delivery Service:
+
+i. SMTP server or third-party service like SendGrid for sending email reports.
+
+- Cloud or Local Hosting:
+
+i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
+
+
 ## MMHHS Target Operating Model
 
 ![image](https://github.com/kukuu/integration/blob/main/target-operating-model.png)
