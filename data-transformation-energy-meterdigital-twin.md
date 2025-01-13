@@ -42,15 +42,19 @@ Stream data live from sources where possible.
 #### Transformation:
 
 i. Add a timestamp column to each record.
-Aggregate data as necessary (e.g., by date or by meter ID).
-Ensure consistent naming and data types.
+
+ii. Aggregate data as necessary (e.g., by date or by meter ID).
+
+iii. Ensure consistent naming and data types.
 
 #### Data Storage:
 
 
-ii. Use pyodbc or SQLAlchemy to connect to a Windows/AZURE SQL database.
-Write transformed data into appropriate database tables.
-Archive live streaming readings into an archive folder every 30 days.
+i. Use pyodbc or SQLAlchemy to connect to a Windows/AZURE SQL database.
+
+ii. Write transformed data into appropriate database tables.
+
+iii. Archive live streaming readings into an archive folder every 30 days.
 
 
 #### SQL Segregation:
