@@ -108,6 +108,47 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 
 
 ```
+#### Summary Architecture Overview
+
+The architecture for the end-to-end development process of processing electricity meter consumption readings includes the following key components:
+
+- Data Ingestion Layer:
+
+Tools: Python Scripts, Scheduler (e.g., Cron Jobs or Airflow)
+
+Description: Python scripts read raw spreadsheet data (Excel/CSV files) from multiple sources. Data includes SMR89134A, SMR89134B, and SMR89134C records.
+
+- Data Transformation Layer:
+
+Tools: Python with Pandas and NumPy for data cleansing and transformation.
+Description: Clean and validate data to ensure it is consistent, structured, and timestamped for ingestion into the database (remove NULL values, duplicates and errorneous values, attach TIMESPAM).
+
+- Storage Layer:
+
+Tools: Relational Database (PostgreSQL/MySQL).
+
+Description: Store cleaned and timestamped data into three separate tables (for A, B, and C data sources).
+
+- Archival System:
+
+Tools: Python Script, File System (e.g., AWS S3 or Local Archive Folder).
+
+Description: Archive live data to a specified directory every 30 days for historical reference.
+
+- Batch Processing and Notification Layer:
+
+
+Tools: Python Script, SMTP (Simple Mail Transfer Protocol) for email delivery.
+
+Description: Generate periodic reports from the database and send the readings via email.
+
+
+- Monitoring and Logging:
+
+Tools: Logging Frameworks (e.g., Python logging), Dashboard (e.g., Grafana or Kibana for metrics and alerts).
+
+Description: Track the health and success of the pipeline.
+
 
 ## Steps and Best Practices for Data Transformation Using Python
 
@@ -274,7 +315,7 @@ WHERE MeterID LIKE 'SMR%34C';
 
 ```
 
-### Batch Processing in Python
+### Batch Processing (Python)
 
 To automate the batch processing, use a Python scheduler like schedule or cron (on Linux):
 
@@ -299,48 +340,8 @@ while True:
 
 ```
 
-## Summary Architecture Overview
 
-The architecture for the end-to-end development process of processing electricity meter consumption readings includes the following key components:
-
-- Data Ingestion Layer:
-
-Tools: Python Scripts, Scheduler (e.g., Cron Jobs or Airflow)
-
-Description: Python scripts read raw spreadsheet data (Excel/CSV files) from multiple sources. Data includes SMR89134A, SMR89134B, and SMR89134C records.
-
-- Data Transformation Layer:
-
-Tools: Python with Pandas and NumPy for data cleansing and transformation.
-Description: Clean and validate data to ensure it is consistent, structured, and timestamped for ingestion into the database (remove NULL values, duplicates and errorneous values, attach TIMESPAM).
-
-- Storage Layer:
-
-Tools: Relational Database (PostgreSQL/MySQL).
-
-Description: Store cleaned and timestamped data into three separate tables (for A, B, and C data sources).
-
-- Archival System:
-
-Tools: Python Script, File System (e.g., AWS S3 or Local Archive Folder).
-
-Description: Archive live data to a specified directory every 30 days for historical reference.
-
-- Batch Processing and Notification Layer:
-
-
-Tools: Python Script, SMTP (Simple Mail Transfer Protocol) for email delivery.
-
-Description: Generate periodic reports from the database and send the readings via email.
-
-
-- Monitoring and Logging:
-
-Tools: Logging Frameworks (e.g., Python logging), Dashboard (e.g., Grafana or Kibana for metrics and alerts).
-
-Description: Track the health and success of the pipeline.
-
-### Python Code: Attaching Timestamp and Archiving Readings
+### Attaching Timestamp and Archiving Readings (Python)
 
 1. Reading Data and Attaching Timestamps
 
@@ -401,7 +402,7 @@ archive_readings()
 
 ```
 
-### SQL Query: Segregating Data Sources
+### Segregating Data Sources (SQL Query)
 
 ```
 -- Create separate tables for the data sources
@@ -435,7 +436,7 @@ SELECT reading, timestamp FROM raw_readings WHERE source = 'C';
 
 ```
 
-### Python Code: Batch Processing and Sending Email
+### Batch Processing and Sending Email (Python)
 
 ```
 import smtplib
@@ -498,7 +499,7 @@ send_email()
 ```
 
 
-## Infrastructure Required
+## Infrastructure
 
 - Development Tools:
 
