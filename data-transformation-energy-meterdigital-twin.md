@@ -39,7 +39,7 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
 +-------------------------------------------------+
                     |
             DATA TRANSFORMATION LAYER
-                                                   
+                    |                            
 +-------------------------------------------------+
 |   Data Cleansing                                |
 | - Handle missing or invalid meter readings      |
