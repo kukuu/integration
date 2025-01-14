@@ -29,6 +29,7 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
                DATA INGESTION LAYER
 +-------------------------------------------------+
 |   Input Sources                                 |
+| - Synthetic Data
 | - Excel Files with Meter Consumption Data       |
 | - Real-time Streaming of Meter Readings         |
 | - API Endpoints for External Data Sources       |
@@ -42,7 +43,8 @@ iii. Provide a batch processing code (in Python) that will send the readings in 
                     |                            
 +-------------------------------------------------+
 |   Data Cleansing                                |
-| - Handle missing or invalid meter readings      |
+| - Handle missing,duplicate or invalid meter     |
+|    readings                                     |
 | - Standardize timestamps and formats            |
 +-------------------------------------------------+
 |   Data Transformation                           |
