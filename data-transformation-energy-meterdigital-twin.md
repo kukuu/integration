@@ -538,6 +538,7 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 ## Related Links
 
+-  https://github.com/DataSolutionSoftware/Home
 -  https://digital-twin-v2-chi.vercel.app/
 -  https://github.com/kukuu/digital-twin-v2
 -  https://github.com/kukuu/integration/blob/main/digital-twin.md
