@@ -540,6 +540,10 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 ![image](https://github.com/kukuu/integration/blob/main/target-operating-model.png)
 
 
+## Related tasks
+
+- https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
+
 ## V2 
 
 - https://digital-twin-v2-chi.vercel.app/
