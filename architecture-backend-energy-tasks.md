@@ -1,4 +1,4 @@
-# Arhitecture design for the Energy sector.
+# Architecture design for the Energy sector.
 
 These tasks focus on solving real-world backend challenges and ensuring scalability, performance, and reliability. They include:
 
