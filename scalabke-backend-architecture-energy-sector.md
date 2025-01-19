@@ -115,3 +115,37 @@ producer.flush()
 
 
 ```
+
+Step 2: Processing Layer
+
+- Use Apache Flink to process streams in real-time.
+
+- Aggregate data, detect anomalies, or filter based on rules.
+
+- Code Example (Flink Stream Processing):
+
+```
+
+from pyflink.datastream import StreamExecutionEnvironment
+from pyflink.common.typeinfo import Types
+
+env = StreamExecutionEnvironment.get_execution_environment()
+
+# Kafka source
+kafka_source = env.add_source(
+    KafkaSource.builder()
+    .set_bootstrap_servers("localhost:9092")
+    .set_topics("meter-readings")
+    .set_group_id("flink-group")
+    .build()
+)
+
+# Process and print data
+kafka_source \
+    .map(lambda x: f"Processed reading: {x}", output_type=Types.STRING()) \
+    .print()
+
+env.execute("Stream Processing Job")
+
+
+```
