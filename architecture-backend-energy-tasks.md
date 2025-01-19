@@ -128,5 +128,6 @@ v. Monitoring and analytics for notification effectiveness.
 
 ## Related tasks
 1.https://github.com/kukuu/integration/blob/main/data-transformation-energy-meterdigital-twin.md
+
 2. https://github.com/kukuu/integration/blob/main/scalabke-backend-architecture-energy-sector.md
-3. 
+
