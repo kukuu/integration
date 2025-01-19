@@ -124,3 +124,7 @@ v. Monitoring and analytics for notification effectiveness.
 - Think Leadership: Show how you would guide your team through the implementation and ensure adherence to best practices.
 
 - Highlight Collaboration: Emphasize how you'd work with stakeholders and cross-functional teams.
+
+
+## Related tasks
+1. https://github.com/kukuu/integration/blob/main/scalabke-backend-architecture-energy-sector.md
