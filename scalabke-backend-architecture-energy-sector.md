@@ -149,3 +149,84 @@ env.execute("Stream Processing Job")
 
 
 ```
+
+Step 3: Storage Layer
+
+i- Store real-time meter readings in InfluxDB for time-series queries.
+
+ii. Store metadata and processed data in PostgreSQL.
+
+iii. InfluxDB Schema:
+
+```
+measurement: meter_readings
+
+fields: consumption
+
+tags: meter_id, region
+
+time: timestamp
+
+```
+
+iv. PostgreSQL Table:
+
+```
+CREATE TABLE meter_metadata (
+    meter_id VARCHAR PRIMARY KEY,
+    customer_id VARCHAR,
+    region VARCHAR,
+    installed_at TIMESTAMP
+);
+
+```
+
+Step 4: Analytics and Reporting Layer
+
+i. Integrate Tableau or AWS QuickSight with PostgreSQL for dashboards.
+
+ii. Use Elasticsearch for querying aggregated data in real-time.
+
+
+Step 5: Monitoring and Logging
+
+i. Set up Prometheus to track metrics like message processing lag, throughput, etc.
+
+ii. Use Grafana for alerting and dashboards.
+
+## Addressing Performance Bottlenecks and Failure Recovery
+
+Performance Bottlenecks:
+
+i. Scaling: Use Kafka partitioning and Kubernetes for scaling processing services.
+
+ii. Caching: Use Redis for frequently accessed data.
+
+iii. Optimization: Tune database indexes and queries.
+
+iv. Failure Recovery:
+
+1. Retries: Implement retry policies for message processing.
+
+2. Circuit Breaker: Use tools like Resilience4j to handle service failures gracefully.
+
+3. Backups: Schedule regular database and configuration backups.
+
+## Trade-offs and Justifications
+
+i. Real-Time vs Batch Processing: Use real-time for critical metrics (e.g., consumption alerts) and batch for less time-sensitive reporting.
+
+ii. Database Selection: Chose InfluxDB for time-series data due to its query efficiency for temporal data.
+
+
+iii. Technology Selection: Kafka provides high throughput and durability for message queues.
+
+## Leadership and Collaboration
+
+i. Regularly sync with stakeholders to prioritize features.
+
+ii. Conduct architecture reviews with the team to ensure adherence to best practices.
+
+iii. Establish cross-functional collaborations with data scientists and analytics teams.
+
+This approach ensures the system is scalable, reliable, and capable of supporting real-time analytics while adhering to best practices in backend architecture.
