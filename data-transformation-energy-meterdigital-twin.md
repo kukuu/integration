@@ -407,7 +407,7 @@ archive_readings()
 
 ```
 
-### F - Segregating Data Sources (SQL Query)
+### H - Segregating Data Sources (SQL Query)
 
 ```
 -- Create separate tables for the data sources
@@ -441,7 +441,7 @@ SELECT reading, timestamp FROM raw_readings WHERE source = 'C';
 
 ```
 
-### G - Batch Processing and Sending Email (Python)
+### I - Batch Processing and Sending Email (Python)
 
 ```
 import smtplib
@@ -504,7 +504,7 @@ send_email()
 ```
 
 
-## H - Infrastructure
+## J - Infrastructure
 
 - Development Tools:
 
@@ -535,7 +535,7 @@ i. SMTP server or third-party service like SendGrid for sending email reports.
 i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 
-## I - MMHHS Target Operating Model
+##   MMHHS Target Operating Model
 
 ![image](https://github.com/kukuu/integration/blob/main/target-operating-model.png)
 
