@@ -15,11 +15,14 @@ Using Python for ensuring data ingestion, cleansing, transformation and for batc
 
 ii. Attach a TIME STAMP to each of the records as they a streamed/registered and archive every 30 days. 
 
-iii. Attach an SQL query statement that will segregate the 3 different data sources into 3 different tables. 
+iii. Attach an SQL query statement that will segregate the 3 different data sources into 3 different tables.
 
-iv. Add ERROR handling and exceptions to the code.
+iv. Calculate mean values of meter readings over peak periods (time series). Add Graphs.
 
-iii. Provide a batch processing code (in Python) that will send the readings in the Database to a Sponsored owner at an email address.
+v. Add ERROR handling and exceptions to the code.
+
+vi. Provide a batch processing code (in Python) that will send the readings in the Database to a Sponsored owner at an email address.
+
 
 ## B - Architecture - DATA PIPELINE
 
