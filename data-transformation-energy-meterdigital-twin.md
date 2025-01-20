@@ -562,6 +562,8 @@ https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks
 
 - https://digital-twin-v2-chi.vercel.app/
 
+
+
 ## Related Links (Backend processes)
 
 -  https://github.com/DataSolutionSoftware/Home
