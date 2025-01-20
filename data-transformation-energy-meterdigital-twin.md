@@ -542,7 +542,7 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 ## Related tasks
 
-- Architecture design tasks for the Energy consumption:
+- Architecture Design Solutions for Energy Consumption:
 
 https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
 
