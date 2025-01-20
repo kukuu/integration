@@ -1,4 +1,4 @@
-# Architecture design for the Energy consumption.
+# Architecture Design Solutions For Energy Consumption.
 
 These tasks focus on solving real-world backend challenges and ensuring scalability, performance, and reliability. They include:
 
