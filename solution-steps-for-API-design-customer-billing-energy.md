@@ -2,6 +2,8 @@
 
 This solution describes designing RESTful APIs for managing customer accounts and billing in a distributed, high-traffic environment while maintaining data consistency and adhering to best practices.
 
+It provides a robust, scalable, and secure backend architecture for customer account and billing management, adhering to industry best practices and focusing on scalability, reliability, and maintainability.
+
 ## Solution Overview (key pillars)
 
 The system must:
