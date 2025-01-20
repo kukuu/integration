@@ -550,7 +550,7 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 - https://digital-twin-v2-chi.vercel.app/
 
-## Related Links
+## Related Links (Backend processes)
 
 -  https://github.com/DataSolutionSoftware/Home
 -  https://digital-twin-v2-chi.vercel.app/
