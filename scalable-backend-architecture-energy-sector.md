@@ -1,4 +1,4 @@
-# Scalable Backend Architecture for Energy Data Processing
+# Implementing Scalable Backend Architecture for Energy Data Processing
 
 This solution outlines the architecture design and practical steps for implementing a scalable backend system to process energy consumption data from millions of smart meters.
 
