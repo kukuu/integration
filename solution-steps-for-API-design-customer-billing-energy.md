@@ -62,7 +62,7 @@ High-Level Architecture:
 
 ## Solution Steps
 
-**Step 1: Define API Endpoints**
+### Step 1: Define API Endpoints
 
 We will design RESTful API endpoints with the following routes for account and billing management:
 
@@ -87,7 +87,7 @@ We will design RESTful API endpoints with the following routes for account and b
 - GET /billing/history/{accountId}: Retrieve billing history for a customer.
 
 
-**Step 2: Authentication and Authorization**
+### Step 2: Authentication and Authorization**
 
 Use OAuth2 or JWT for authentication.
 Implement role-based access control (RBAC) to restrict access to APIs based on roles (e.g., Admin, Customer).
