@@ -91,3 +91,34 @@ We will design RESTful API endpoints with the following routes for account and b
 
 Use OAuth2 or JWT for authentication.
 Implement role-based access control (RBAC) to restrict access to APIs based on roles (e.g., Admin, Customer).
+
+Code Example (JWT Authentication Middleware):
+
+```
+from flask import request, jsonify
+import jwt
+
+SECRET_KEY = "your_secret_key"
+
+def jwt_auth_required(func):
+    def wrapper(*args, **kwargs):
+        token = request.headers.get("Authorization", None)
+        if not token:
+            return jsonify({"error": "Unauthorized"}), 401
+
+        try:
+            decoded_token = jwt.decode(token.split(" ")[1], SECRET_KEY, algorithms=["HS256"])
+            request.user = decoded_token
+        except jwt.ExpiredSignatureError:
+            return jsonify({"error": "Token expired"}), 401
+        except jwt.InvalidTokenError:
+            return jsonify({"error": "Invalid token"}), 401
+
+        return func(*args, **kwargs)
+    return wrapper
+
+```
+
+### 3: Database Schema Design
+
+Customer Table:
