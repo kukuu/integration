@@ -554,6 +554,10 @@ https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks
 
  https://github.com/kukuu/integration/blob/main/solution-steps-for-API-design-customer-billing-energy.md
 
+ - Practical Soluions for Fault Tolerance
+ 
+ https://github.com/kukuu/integration/blob/main/fault-tolerant-backend-system.md
+
 ## V2 
 
 - https://digital-twin-v2-chi.vercel.app/
