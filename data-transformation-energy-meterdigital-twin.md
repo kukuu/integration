@@ -542,9 +542,17 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 ## Related tasks
 
-- Architecture design tasks for the Energy consumption: https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
-- Implementing Scalable Backend Architecture for Energy Data Processing: https://github.com/kukuu/integration/blob/main/scalable-backend-architecture-energy-sector.md
-- Solution Steps for API Design for Customer Billing or Account Management: https://github.com/kukuu/integration/blob/main/solution-steps-for-API-design-customer-billing-energy.md
+- Architecture design tasks for the Energy consumption:
+
+https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
+
+- Implementing Scalable Backend Architecture for Energy Data Processing:
+
+ https://github.com/kukuu/integration/blob/main/scalable-backend-architecture-energy-sector.md
+
+- Solution Steps for API Design for Customer Billing or Account Management:
+
+ https://github.com/kukuu/integration/blob/main/solution-steps-for-API-design-customer-billing-energy.md
 
 ## V2 
 
