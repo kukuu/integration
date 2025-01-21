@@ -90,3 +90,52 @@ Here’s a high-level architecture diagram for the fault-tolerant distributed sy
 i. Load Balancing and Replication
 
 - Setup with NGINX (Example Configuration for Multiple Backend Services):
+
+- ```
+http {
+    upstream backend_services {
+        server service_a:8080;
+        server service_b:8081;
+    }
+
+    server {
+        listen 80;
+
+        location / {
+            proxy_pass http://backend_services;
+        }
+    }
+}
+
+  ```
+
+ii. Circuit Breaker Pattern
+
+- Using Resilience4j (Example in Spring Boot - JAVA):
+
+```
+@CircuitBreaker(name = "energyService", fallbackMethod = "fallbackEnergyService")
+public String getEnergyData() {
+    // Call to an external service
+    return restTemplate.getForObject("http://external-service/energy", String.class);
+}
+
+public String fallbackEnergyService(Throwable t) {
+    return "Fallback response: External service is unavailable.";
+}
+
+```
+
+iii. Disaster Recovery
+
+- Use AWS RDS for multi-region database replication:
+
+```
+# Enable Read Replica for disaster recovery in PostgreSQL (AWS CLI Example)
+aws rds create-db-instance-read-replica \
+    --db-instance-identifier mydb-replica \
+    --source-db-instance-identifier mydb \
+    --region us-east-2
+
+```
+
