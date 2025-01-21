@@ -558,6 +558,10 @@ https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks
  
  https://github.com/kukuu/integration/blob/main/fault-tolerant-backend-system.md
 
+ - Energy Market Dynamic Pricing Architecture
+
+https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-architecture.md
+
 ## V2 
 
 - https://digital-twin-v2-chi.vercel.app/
