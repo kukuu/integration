@@ -126,9 +126,11 @@ v. Monitoring and analytics for notification effectiveness.
 - Highlight Collaboration: Emphasize how you'd work with stakeholders and cross-functional teams.
 
 
-## Related tasks
+## Related tasks 
 
-- Architecture design tasks for the Energy consumption:
+### Blueprints
+
+- Architecture Design Solutions for Energy Consumption:
 
 https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
 
@@ -143,5 +145,9 @@ https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks
  - Practical Soluions for Fault Tolerance
  
  https://github.com/kukuu/integration/blob/main/fault-tolerant-backend-system.md
+
+ - Energy Market Dynamic Pricing Architecture
+
+https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-architecture.md
 
 
