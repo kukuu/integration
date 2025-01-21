@@ -1,6 +1,5 @@
 # Data Transformation - Digital Twin Energy Meter 
 
-* BLUEPRINT
 
 This architecture ensures scalable data transformation and storage while providing regular batch processing and reporting. It also implements an effective archival mechanism for older data.
 
@@ -547,7 +546,7 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 ![image](https://github.com/kukuu/integration/blob/main/target-operating-model.png)
 
 
-## Related tasks
+## Related tasks (Blueprints)
 
 - Architecture Design Solutions for Energy Consumption:
 
