@@ -89,4 +89,4 @@ Here’s a high-level architecture diagram for the fault-tolerant distributed sy
 
 i. Load Balancing and Replication
 
-Setup with NGINX (Example Configuration for Multiple Backend Services):
+- Setup with NGINX (Example Configuration for Multiple Backend Services):
