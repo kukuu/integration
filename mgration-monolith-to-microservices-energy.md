@@ -134,3 +134,39 @@ i. Processes and stores smart meter readings.
 Use tools like Kong, NGINX, or AWS API Gateway.
 
 - API Gateway Configuration Example (NGINX):
+
+```
+server {
+    listen 80;
+
+    location /billing/ {
+        proxy_pass http://billing-service:8080/;
+    }
+
+    location /pricing/ {
+        proxy_pass http://pricing-service:8081/;
+    }
+
+    location /account/ {
+        proxy_pass http://account-service:8082/;
+    }
+}
+
+
+```
+
+### Data Migration Strategy
+
+- Implement the Strangler Fig Pattern:
+
+i. Gradually replace monolithic components with microservices.
+
+ii. Use database synchronization tools like Debezium or AWS DMS for data replication.
+
+- Shared Database Transition Example:
+
+i. Start with a shared database schema for all services.
+
+ii. Gradually extract service-specific tables to their own databases.
+
+iii. Implement an event-driven approach (e.g., Kafka) to synchronize data between services.
