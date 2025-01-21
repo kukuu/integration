@@ -170,3 +170,49 @@ i. Start with a shared database schema for all services.
 ii. Gradually extract service-specific tables to their own databases.
 
 iii. Implement an event-driven approach (e.g., Kafka) to synchronize data between services.
+
+
+### CI/CD Pipelines
+
+- Jenkins Pipeline for Microservices:
+
+```
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker build -t billing-service:latest .'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'pytest tests/'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'kubectl apply -f deployment.yaml'
+            }
+        }
+    }
+}
+
+
+```
+- Use Docker and Kubernetes for containerization and orchestration.
+
+
+### Techniques for Minimal Downtime
+
+- Blue-Green Deployment:
+
+i. Maintain two environments (blue = old, green = new).
+
+ii. Route traffic to the new environment only after validation.
+
+- Canary Deployment:
+
+i. Gradually shift a small percentage of traffic to the new service.
+
+ii. Roll back if errors occur.
