@@ -547,7 +547,9 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 ![image](https://github.com/kukuu/integration/blob/main/target-operating-model.png)
 
 
-## Related tasks (Blueprints)
+## Related tasks 
+
+### Blueprints
 
 - Architecture Design Solutions for Energy Consumption:
 
