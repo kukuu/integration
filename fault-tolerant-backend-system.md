@@ -137,3 +137,40 @@ aws rds create-db-instance-read-replica \
     --region us-east-2
 ```
 
+iv. Eventual Consistency
+
+Kafka Producer Example (Python):
+
+```
+from kafka import KafkaProducer
+import json
+
+producer = KafkaProducer(
+    bootstrap_servers='kafka-broker:9092',
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
+
+data = {
+    "meter_id": "12345",
+    "reading": 200,
+    "timestamp": "2025-01-09T12:00:00Z"
+}
+
+producer.send('energy_readings', value=data)
+producer.flush()
+
+```
+
+v. Observability
+
+- Prometheus Configuration Example:
+
+yml
+
+```
+scrape_configs:
+  - job_name: 'backend-services'
+    static_configs:
+      - targets: ['service_a:8080', 'service_b:8081']
+
+```
