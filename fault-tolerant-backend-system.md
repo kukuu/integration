@@ -53,3 +53,34 @@ To design a fault-tolerant distributed system, the focus is on ensuring service 
 - Set up distributed logging with the ELK stack (Elasticsearch, Logstash, Kibana).
 
 - Configure alerts for anomalies and system failures using tools like PagerDuty.
+
+## Architecture Design
+
+Here’s a high-level architecture diagram for the fault-tolerant distributed system:
+
+```
++-------------------+          +--------------------+
+|  Load Balancer    |   --->   |    Service A       |
+| (NGINX/AWS ELB)   |          | (Energy Readings)  |
++-------------------+          +--------------------+
+          |                             |
+          |                             |
+          |          +--------------------+
+          |   --->   |    Service B       |
+          |          | (Billing/Reports)  |
+          |          +--------------------+
+          |
++-------------------------------------------------+
+|         Event Streaming Platform (Kafka)       |
++-------------------------------------------------+
+          |
++------------------+         +-------------------+
+| Time-Series DB   |         | Relational DB     |
+| (InfluxDB)       |         | (PostgreSQL)      |
++------------------+         +-------------------+
+          |
++-------------------------------------------------+
+|        Monitoring & Logging (Prometheus, ELK)  |
++-------------------------------------------------+
+
+```
