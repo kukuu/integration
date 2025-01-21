@@ -2,6 +2,28 @@
 
 To design a fault-tolerant distributed system, the focus is on ensuring service availability, data consistency, and the ability to recover gracefully from failures. Below is a practical solution that includes architectural design, solution steps, and code examples.
 
+## Key Best Practices
+
+- Domain Understanding:
+
+i. Incorporate GDPR and data privacy requirements.
+
+ii. Understand SLAs, regulatory standards for uptime and data accuracy.
+
+- Leadership:
+
+i. Guide the team in designing and implementing resilient systems.
+
+ii. Regularly review system performance and failure recovery strategies.
+
+- Collaboration:
+
+i. Work with cross-functional teams to ensure alignment on disaster recovery, monitoring, and scaling plans.
+
+- Trade-Offs:
+
+i. Use eventual consistency for performance-critical systems but balance it with synchronous transactions for critical data.
+
 ##  Solution Steps
 
 ### Step 1: Load Balancing and Replication
