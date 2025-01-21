@@ -1,4 +1,6 @@
-# Data Transformation - Digital Twin Energy Meter
+# Data Transformation - Digital Twin Energy Meter 
+
+* BLUEPRINT
 
 This architecture ensures scalable data transformation and storage while providing regular batch processing and reporting. It also implements an effective archival mechanism for older data.
 
