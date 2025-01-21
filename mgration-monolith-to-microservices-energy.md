@@ -216,3 +216,70 @@ ii. Route traffic to the new environment only after validation.
 i. Gradually shift a small percentage of traffic to the new service.
 
 ii. Roll back if errors occur.
+
+
+### Example: Kubernetes Canary Deployment
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: billing-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: billing
+  template:
+    metadata:
+      labels:
+        app: billing
+        version: canary
+    spec:
+      containers:
+      - name: billing-service
+        image: billing-service:canary
+
+
+```
+
+ ### Observability
+
+- Prometheus and Grafana for Metrics:
+
+i. Track latency, error rates, and resource utilization for each service.
+
+- ELK Stack for Logs:
+i. Aggregate logs from all services to debug issues during migration.
+
+- Prometheus Configuration Example:
+
+```
+scrape_configs:
+  - job_name: 'billing-service'
+    static_configs:
+      - targets: ['billing-service:8080']
+  - job_name: 'pricing-service'
+    static_configs:
+      - targets: ['pricing-service:8081']
+
+
+```
+
+## Challenges and Trade-offs
+
+- Database Transition:
+
+i. A shared database simplifies initial migration but can become a bottleneck. Plan to transition to service-specific databases incrementally.
+
+- Performance Overhead:
+
+i. Microservices introduce network latency due to inter-service communication. Use caching (e.g., Redis) to reduce overhead.
+
+
+## Leadership and Collaboration
+i. Lead cross-functional discussions to identify business domains and prioritize migration.
+
+ii. Collaborate with stakeholders (e.g., product teams, operations) to align migration goals with business outcomes.
+
+iii. Encourage DevOps best practices to ensure smooth deployments and monitoring.
