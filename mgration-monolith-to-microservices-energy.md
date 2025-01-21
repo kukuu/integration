@@ -1,5 +1,5 @@
 
-# Solution: Migration from Monolith to Microservices
+# Solution -  Migration from Monolith to Microservices
 
 Transitioning from a monolithic application to a microservices-based architecture requires careful planning to ensure scalability, reliability, and business continuity. Below is a practical roadmap, architecture design, and implementation details for the migration.
 
