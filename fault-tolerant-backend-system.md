@@ -1,6 +1,4 @@
-#  Fault-Tolerant Distributed System
-
-* Practical Solution:
+# Practical Solution For Fault-Tolerant Distributed System
 
 To design a fault-tolerant distributed system, the focus is on ensuring service availability, data consistency, and the ability to recover gracefully from failures. Below is a practical solution that includes architectural design, solution steps, and code examples.
 
