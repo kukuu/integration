@@ -130,12 +130,12 @@ iii. Disaster Recovery
 
 - Use AWS RDS for multi-region database replication:
 
+* Enable Read Replica for disaster recovery in PostgreSQL (AWS CLI Example)
+
 ```
-# Enable Read Replica for disaster recovery in PostgreSQL (AWS CLI Example)
 aws rds create-db-instance-read-replica \
     --db-instance-identifier mydb-replica \
     --source-db-instance-identifier mydb \
     --region us-east-2
-
 ```
 
