@@ -91,7 +91,7 @@ i. Load Balancing and Replication
 
 - Setup with NGINX (Example Configuration for Multiple Backend Services):
 
-- ```
+ ```
 http {
     upstream backend_services {
         server service_a:8080;
@@ -128,9 +128,7 @@ public String fallbackEnergyService(Throwable t) {
 
 iii. Disaster Recovery
 
-- Use AWS RDS for multi-region database replication:
-
-* Enable Read Replica for disaster recovery in PostgreSQL (AWS CLI Example)
+- Use AWS RDS for multi-region database replication: Enable Read Replica for disaster recovery in PostgreSQL (AWS CLI Example)
 
 ```
 aws rds create-db-instance-read-replica \
