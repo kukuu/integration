@@ -66,3 +66,71 @@ iii. Implement monitoring to track performance and rollback plans for failures.
 ### Step 8: Observability and Monitoring
 
 - Set up observability tools (e.g., Prometheus, Grafana, ELK Stack) to monitor system health, performance, and logs.
+
+## High-Level Architecture Design
+
+```
++-------------------------------------+
+|              Clients                |
+| (Mobile, Web, External APIs)        |
++-------------------------------------+
+                 |
+        +-------------------+
+        |    API Gateway    |
+        | (Routing, Auth,   |
+        | Rate Limiting)    |
+        +-------------------+
+                 |
++----------------+----------------+-------------------+
+| Billing Service            | Pricing Service         |
+| (Billing DB)               | (Pricing DB)           |
++----------------------------+------------------------+
+                 |
+        +-------------------+-------------------+
+        | Account Service   | Meter Data Service |
+        | (Account DB)      | (Time-Series DB)   |
+        +-------------------+-------------------+
+                 |
+        +----------------------------+
+        | Shared Cache (Redis)       |
+        +----------------------------+
+
+Observability: Prometheus, Grafana, ELK Stack
+CI/CD: Jenkins, GitHub Actions, Docker, Kubernetes
+
+```
+
+
+## Implementation Details
+
+### Identification of Business Domains
+Using Domain-Driven Design (DDD), divide the monolith into independent microservices. For example:
+
+- Billing Service:
+
+i. Handles customer invoices and payments.
+
+ii. Database: PostgreSQL (structured data).
+
+- Pricing Service:
+
+i. Calculates dynamic energy prices.
+
+- Database: NoSQL or time-series database (e.g., InfluxDB).
+
+- Account Service:
+
+i. Manages user profiles and authentication.
+
+- Database: PostgreSQL.
+
+- Meter Data Service:
+
+i. Processes and stores smart meter readings.
+
+- Database: NoSQL or time-series database.
+
+### API Gateway Design
+Use tools like Kong, NGINX, or AWS API Gateway.
+
+- API Gateway Configuration Example (NGINX):
