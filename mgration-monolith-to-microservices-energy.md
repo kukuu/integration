@@ -161,7 +161,7 @@ server {
 
 i. Gradually replace monolithic components with microservices.
 
-ii. Use database synchronization tools like Debezium or AWS DMS for data replication.
+ii. Use database replication tools like Debezium or AWS DMS for data replication.
 
 - Shared Database Transition Example:
 
