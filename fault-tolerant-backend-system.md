@@ -174,3 +174,15 @@ scrape_configs:
       - targets: ['service_a:8080', 'service_b:8081']
 
 ```
+
+- Grafana Dashboard Setup:
+
+i. Connect Prometheus as the data source in Grafana.
+
+ii. Create a dashboard with key metrics such as:
+
+a. Request latency
+
+b. Error rates
+
+c. CPU and memory usage.
