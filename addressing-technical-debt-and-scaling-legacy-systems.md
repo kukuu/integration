@@ -48,3 +48,172 @@ This solution provides a comprehensive roadmap to address technical debt and sca
 
 - Develop a prioritized roadmap, balancing technical improvements and business needs.
 Demonstrate ROI by showing how debt reduction improves key metrics (e.g., latency, scalability).
+
+
+## Architecture Design
+
+### High-Level Overview:
+
+- API Gateway: Acts as a single entry point, routing traffic to legacy systems or refactored microservices.
+
+- Microservices: Gradually replace legacy system functionality with scalable, loosely coupled services.
+
+- Caching Layer: Introduce Redis or Memcached for frequently accessed data.
+
+- Data Layer: Use database sharding/partitioning and replication to ensure performance.
+
+- Monitoring Tools: Implement tools like Prometheus and Grafana to track system performance and technical debt.
+
+### Architecture Diagram
+
+```
++-------------------------------------+
+|          API Gateway               |
++-------------------------------------+
+        |            |
++----------------+    +-----------------------+
+| Legacy System |    |    Microservices      |
+|   (Monolith)  |    |    (Refactored)       |
++----------------+    +-----------------------+
+        |                      |
++----------------------+  +------------------------+
+| Caching Layer (Redis)|  |    Data Layer (DB)     |
++----------------------+  +------------------------+
+        |
++------------------------+
+| Monitoring & Logging  |
+| (Prometheus/Grafana)  |
++------------------------+
+
+```
+
+## Code Examples
+
+i. Strangler Pattern: Transition Legacy Service to Microservices
+
+```
+from flask import Flask, request, jsonify
+import requests
+
+app = Flask(__name__)
+
+# Legacy system endpoint
+LEGACY_SYSTEM_URL = "http://legacy-system.example.com"
+
+# New microservice endpoint
+MICROSERVICE_URL = "http://new-microservice.example.com"
+
+@app.route("/api/endpoint", methods=["GET", "POST"])
+def proxy_request():
+    if legacy_component_still_used():
+        # Forward request to the legacy system
+        response = requests.request(
+            method=request.method,
+            url=LEGACY_SYSTEM_URL + request.path,
+            headers=request.headers,
+            data=request.get_data(),
+        )
+    else:
+        # Forward request to the new microservice
+        response = requests.request(
+            method=request.method,
+            url=MICROSERVICE_URL + request.path,
+            headers=request.headers,
+            data=request.get_data(),
+        )
+    return jsonify(response.json()), response.status_code
+
+def legacy_component_still_used():
+    # Logic to determine if legacy system is still active for this service
+    return True
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+```
+
+ii. Horizontal Scaling with Kubernetes
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: energy-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: energy-backend
+  template:
+    metadata:
+      labels:
+        app: energy-backend
+    spec:
+      containers:
+      - name: backend-container
+        image: energy-backend:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "256Mi"
+          limits:
+            cpu: "1"
+            memory: "512Mi"
+
+```
+
+iii. Adding Caching with Redis
+
+```
+import redis
+import time
+
+# Connect to Redis
+redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+def get_customer_data(customer_id):
+    # Check if data exists in Redis cache
+    cached_data = redis_client.get(customer_id)
+    if cached_data:
+        return cached_data.decode('utf-8')
+    
+    # Simulate database query
+    data = f"Customer {customer_id} data from DB"
+    time.sleep(2)  # Simulating latency
+    
+    # Store data in cache with 5-minute expiry
+    redis_client.setex(customer_id, 300, data)
+    return data
+
+customer_data = get_customer_data("12345")
+print(customer_data)
+
+
+```
+
+## Tools for Monitoring and Measuring Technical Debt
+
+- Use SonarQube for technical debt measurement:
+
+```
+sonar-scanner \
+  -Dsonar.projectKey=EnergyBackend \
+  -Dsonar.sources=src \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=your_sonar_token
+
+```
+
+- Implement monitoring with Prometheus:
+
+```
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: 'energy-backend'
+    static_configs:
+      - targets: ['localhost:8080']
+
+```
