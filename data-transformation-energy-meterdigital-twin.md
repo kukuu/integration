@@ -575,6 +575,10 @@ https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-arc
 
 https://github.com/kukuu/integration/blob/main/mgration-monolith-to-microservices-energy.md
 
+- Addressing Technical Debt and Scaling Legacy Systems
+
+https://github.com/kukuu/integration/blob/main/addressing-technical-debt-and-scaling-legacy-systems.md
+
 ## V2 
 
 - https://digital-twin-v2-chi.vercel.app/
