@@ -579,6 +579,10 @@ https://github.com/kukuu/integration/blob/main/mgration-monolith-to-microservice
 
 https://github.com/kukuu/integration/blob/main/addressing-technical-debt-and-scaling-legacy-systems.md
 
+- RealTime Notification System
+
+https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
+
 ## V2 
 
 - https://digital-twin-v2-chi.vercel.app/
