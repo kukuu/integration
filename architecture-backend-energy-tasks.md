@@ -154,4 +154,12 @@ https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-arc
 
 https://github.com/kukuu/integration/blob/main/mgration-monolith-to-microservices-energy.md
 
+- Addressing Technical Debt and Scaling Legacy Systems
+
+https://github.com/kukuu/integration/blob/main/addressing-technical-debt-and-scaling-legacy-systems.md
+
+- RealTime Notification System
+
+https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
+
 
