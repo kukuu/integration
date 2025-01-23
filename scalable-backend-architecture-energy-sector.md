@@ -22,16 +22,17 @@ v. Be fault-tolerant and address performance bottlenecks.
 i. Data Ingestion Layer:
 
 Real-time ingestion via Apache Kafka or AWS Kinesis for streaming data.
+
 Batch ingestion via scheduled ETL jobs using AWS Glue or Apache Airflow.
 
 
-i. Processing Layer:
+ii. Processing Layer:
 
 a. Stream processing using Apache Flink or Kafka Streams.
 
 b. Batch processing using Apache Spark or AWS Batch.
 
-ii. Storage Layer:
+iii. Storage Layer:
 
 - Time-series database: InfluxDB or AWS Timestream for meter readings.
 Relational database: PostgreSQL or Amazon RDS for metadata and structured data.
