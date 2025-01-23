@@ -17,6 +17,8 @@ iv. Integration with analytics and reporting tools.
 
 v. Address performance bottlenecks and failure recovery.
 
+Solution Design: https://github.com/kukuu/integration/blob/main/scalable-backend-architecture-energy-sector.md
+
 ### API Design for Customer Billing or Account Management
 Scenario: Design RESTful or GraphQL APIs for customer account management or billing systems. Ensure the system can handle high traffic and data consistency across distributed services.
 
@@ -32,6 +34,7 @@ iv. Rate limiting and caching strategies to handle high traffic (e.g., Redis).
 
 v. Logging and monitoring for debugging and performance tracking.
 
+Solution Design: https://github.com/kukuu/integration/blob/main/solution-steps-for-API-design-customer-billing-energy.md
 
 ### Implement a Fault-Tolerant Distributed System
 Scenario: Customers rely on the Energy sector for accurate energy monitoring, so uptime and reliability are critical. Design a system that ensures data consistency and service availability during failures.
@@ -48,6 +51,7 @@ iv. Techniques to handle eventual consistency in distributed systems.
 
 v. Observability (e.g., using Prometheus, Grafana, or ELK stack).
 
+Solution Design: https://github.com/kukuu/integration/blob/main/fault-tolerant-backend-system.md 
 
 ### Architect a Solution for Dynamic Pricing Models
 Scenario: The Energy sector wants to implement dynamic energy pricing based on factors like time of day, energy demand, and market conditions. Design a backend system to support this feature.
@@ -64,6 +68,7 @@ iv. Scalability to handle millions of pricing calculations.
 
 v. Ensuring security and regulatory compliance for sensitive financial data.
 
+Solution Design: https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-architecture.md
 
 ### Migration from Monolith to Microservices
 Scenario: The Energy sector is transitioning from a monolithic application to microservices. Design a roadmap and architecture for the migration.
@@ -80,6 +85,7 @@ iv. CI/CD pipelines for microservice deployment.
 
 v. Techniques to ensure minimal downtime and smooth migration.
 
+Solution Design: https://github.com/kukuu/integration/blob/main/mgration-monolith-to-microservices-energy.md
 
 ### Addressing Technical Debt and Scaling Legacy Systems
 Scenario: Some of The Energy sector systems have accumulated technical debt, making them harder to scale. Present a solution to refactor and scale these systems while minimizing disruption.
@@ -95,6 +101,8 @@ iii. Tools and techniques to measure and reduce technical debt.
 iv. Balancing between delivering new features and addressing technical debt.
 
 v. Communication strategies with stakeholders about timelines and trade-offs.
+
+Solution Design: https://github.com/kukuu/integration/blob/main/addressing-technical-debt-and-scaling-legacy-systems.md
 
 
 ### Real-Time Notification System
@@ -112,6 +120,7 @@ iv. Handling retries and failures in notification delivery.
 
 v. Monitoring and analytics for notification effectiveness.
 
+Solution Design: https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
 
 ## Prepare for These Tasks:
 
@@ -124,42 +133,4 @@ v. Monitoring and analytics for notification effectiveness.
 - Think Leadership: Show how you would guide your team through the implementation and ensure adherence to best practices.
 
 - Highlight Collaboration: Emphasize how you'd work with stakeholders and cross-functional teams.
-
-
-## Related tasks 
-
-### Blueprints
-
-- Architecture Design Solutions for Energy Consumption:
-
-https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
-
-- Implementing Scalable Backend Architecture for Energy Data Processing:
-
- https://github.com/kukuu/integration/blob/main/scalable-backend-architecture-energy-sector.md
-
-- Solution Steps for API Design for Customer Billing or Account Management:
-
- https://github.com/kukuu/integration/blob/main/solution-steps-for-API-design-customer-billing-energy.md
-
- - Practical Soluions for Fault Tolerance
- 
- https://github.com/kukuu/integration/blob/main/fault-tolerant-backend-system.md
-
- - Energy Market Dynamic Pricing Architecture
-
-https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-architecture.md
-
-- Migration Monolith to Microservices
-
-https://github.com/kukuu/integration/blob/main/mgration-monolith-to-microservices-energy.md
-
-- Addressing Technical Debt and Scaling Legacy Systems
-
-https://github.com/kukuu/integration/blob/main/addressing-technical-debt-and-scaling-legacy-systems.md
-
-- RealTime Notification System
-
-https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
-
 
