@@ -23,10 +23,13 @@ i. Data Ingestion Layer:
 
 Real-time ingestion via Apache Kafka or AWS Kinesis for streaming data.
 Batch ingestion via scheduled ETL jobs using AWS Glue or Apache Airflow.
-Processing Layer:
 
-Stream processing using Apache Flink or Kafka Streams.
-Batch processing using Apache Spark or AWS Batch.
+
+i. Processing Layer:
+
+a. Stream processing using Apache Flink or Kafka Streams.
+
+b. Batch processing using Apache Spark or AWS Batch.
 
 ii. Storage Layer:
 
