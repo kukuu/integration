@@ -2,6 +2,8 @@
 
 To design a fault-tolerant distributed system, the focus is on ensuring service availability, data consistency, and the ability to recover gracefully from failures. Below is a practical solution that includes architectural design, solution steps, and code examples.
 
+This architecture ensures that the distributed system is fault-tolerant, highly available, and capable of handling failures gracefully. By leveraging best practices in load balancing, circuit breaker patterns, disaster recovery, eventual consistency, and observability, the system can meet the critical needs of the energy sector while ensuring a smooth customer experience.
+
 ## Key Best Practices
 
 - Domain Understanding:
@@ -210,5 +212,5 @@ b. Error rates
 
 c. CPU and memory usage.
 
-## Summary
-This architecture ensures that the distributed system is fault-tolerant, highly available, and capable of handling failures gracefully. By leveraging best practices in load balancing, circuit breaker patterns, disaster recovery, eventual consistency, and observability, the system can meet the critical needs of the energy sector while ensuring a smooth customer experience.
+
+
