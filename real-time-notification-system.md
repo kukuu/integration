@@ -94,14 +94,14 @@ print("Event published to Kafka.")
 
 - Processing and Notification Microservice
 
-  ```
+```
 from flask import Flask, request
 from kafka import KafkaConsumer
 import requests
 
 app = Flask(__name__) 
 
-```
+
 # Kafka Consumer
 consumer = KafkaConsumer(
     'notifications',
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 
-  ```
+```
 
 -  Retry Logic for Failures
 
