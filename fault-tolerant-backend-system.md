@@ -37,7 +37,7 @@ i. Use eventual consistency for performance-critical systems but balance it with
 
 - Deploy services across multiple availability zones (AZs) or regions to ensure redundancy.
 
-- Enable horizontal scaling using container orchestration tools like Kubernetes (K8s) or AWS ECS.
+- Enable horizontal and auto scaling(with help of cloud watch) using container orchestration tools like Kubernetes (K8s) or AWS ECS.
 
 ### Step 2: Circuit Breaker Patterns
 
