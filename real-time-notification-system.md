@@ -99,8 +99,9 @@ from flask import Flask, request
 from kafka import KafkaConsumer
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
+```
 # Kafka Consumer
 consumer = KafkaConsumer(
     'notifications',
