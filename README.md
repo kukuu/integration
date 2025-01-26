@@ -86,5 +86,6 @@ https://drive.google.com/file/d/1LCi_PciknOFIhoiWiNXqHjH8XuOOaN9z/view?ts=658eb0
 - https://github.com/kukuu/unit-tests-bench-marks
 - https://github.com/kukuu/microfrontends
 - https://github.com/kukuu/Microservice-NodeJS
+- https://github.com/kukuu/integration/blob/main/data-transformation-energy-meterdigital-twin.md
 - https://owasp.org/www-project-top-ten/
 
