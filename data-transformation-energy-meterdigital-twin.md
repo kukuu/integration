@@ -595,6 +595,7 @@ https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
 -  https://digital-twin-v2-chi.vercel.app/
 -  https://github.com/kukuu/digital-twin-v2
 -  https://github.com/kukuu/integration/blob/main/digital-twin.md
+-  https://github.com/kukuu/digital-twin/tree/main
 -  https://www.mhhsprogramme.co.uk/programme-information/programme-overview
 -  https://github.com/kukuu/integration/tree/main
 -  https://github.com/kukuu/integration/blob/main/digital-transformation-practices.md
