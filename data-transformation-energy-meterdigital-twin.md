@@ -549,7 +549,7 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 ## Related tasks 
 
-### Blueprints
+### Blueprints (sub-tasks)
 
 - Architecture Design Solutions for Energy Consumption:
 
