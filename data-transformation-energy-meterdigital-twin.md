@@ -549,39 +549,12 @@ i. AWS EC2/Google Cloud VM or local server for hosting scripts and database.
 
 ## Related tasks 
 
-### Blueprints (sub-tasks)
+### Sub-tasks (Blueprints)
 
 - Architecture Design Solutions for Energy Consumption:
 
 https://github.com/kukuu/integration/blob/main/architecture-backend-energy-tasks.md
 
-- Implementing Scalable Backend Architecture for Energy Data Processing:
-
- https://github.com/kukuu/integration/blob/main/scalable-backend-architecture-energy-sector.md
-
-- Solution Steps for API Design for Customer Billing or Account Management:
-
- https://github.com/kukuu/integration/blob/main/solution-steps-for-API-design-customer-billing-energy.md
-
- - Practical Soluions for Fault Tolerance
- 
- https://github.com/kukuu/integration/blob/main/fault-tolerant-backend-system.md
-
- - Energy Market Dynamic Pricing Architecture
-
-https://github.com/kukuu/integration/blob/main/dynamic-pricing-energy-sector-architecture.md
-
-- Migration Monolith to Microservices
-
-https://github.com/kukuu/integration/blob/main/mgration-monolith-to-microservices-energy.md
-
-- Addressing Technical Debt and Scaling Legacy Systems
-
-https://github.com/kukuu/integration/blob/main/addressing-technical-debt-and-scaling-legacy-systems.md
-
-- RealTime Notification System
-
-https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
 
 ## V2 
 
