@@ -18,6 +18,4 @@ If the initial wait time is T, the time before the n-th retry can be calculated 
 
 For example:
 
-𝑇 = 1𝑠
-
 T=1s: Retry wait times will be 1s, 2s, 4s, 8s, etc.
