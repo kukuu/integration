@@ -589,7 +589,7 @@ https://github.com/kukuu/integration/blob/main/real-time-notification-system.md
 
 
 
-## Related Links (Backend processes)
+## Related Links 
 
 -  https://github.com/DataSolutionSoftware/Home
 -  https://digital-twin-v2-chi.vercel.app/
