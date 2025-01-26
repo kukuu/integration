@@ -15,3 +15,9 @@ Jitter: To avoid synchronized retries from multiple clients, random "jitter" is 
 If the initial wait time is T, the time before the n-th retry can be calculated as:
 
 ![image](https://github.com/kukuu/integration/blob/main/backoff-calculator.png)
+
+For example:
+
+𝑇 = 1𝑠
+
+T=1s: Retry wait times will be 1s, 2s, 4s, 8s, etc.
