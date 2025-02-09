@@ -259,3 +259,4 @@ iii. Use Prometheus and distributed tracing to  help  monitor system health/Heal
 - https://github.com/kukuu/integration/blob/main/system-design-ii.pdf
 - https://github.com/kukuu/integration/blob/main/system-design.pdf
 - https://github.com/kukuu/integration/blob/main/sytem-design-news-feed-.md
+- https://github.com/kukuu/integration/blob/main/system-design-architecture-for-digital-platforms.md
