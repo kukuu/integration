@@ -93,7 +93,7 @@ vi. Provide a batch processing code (in Python) that will send the readings in t
 | - Generate and email reports (PDF/CSV)          |
 +-------------------------------------------------+
 |   Notification System                           |
-| - Send reports to bob@btl.com via SMTP          |
+| - Send reports to email via SMTP/Payment Gateway |
 | - Integrate email notifications with SES/SendGrid|
 +-------------------------------------------------+
 |   Tools                                         |
