@@ -32,17 +32,17 @@ vi. Provide a batch processing code (in Python) that will send the readings in t
 
 
                DATA INGESTION LAYER
-+-------------------------------------------------+
-|   Input Sources                                 |
-| - Synthetic Data
-| - Excel Files with Meter Consumption Data       |
-| - Real-time Streaming of Meter Readings         |
-| - API Endpoints for External Data Sources       |
-+-------------------------------------------------+
-|   Tools                                         |
-| - Python (Pandas, OpenPyXL for spreadsheets)    |
-| - Kafka or RabbitMQ for real-time streaming     |
-+-------------------------------------------------+
++------------------------------------------------------+
+|   Input Sources                                      |
+| - Synthetic Data                                     |
+| - Excel Files with Meter Consumption Data            |
+| - Real-time Streaming of Meter Readings              |
+| - API Endpoints for External Data Sources(in-scope)  |
++------------------------------------------------------+
+|   Tools                                              |
+| - Python (Pandas, OpenPyXL for spreadsheets)         |
+| - Kafka or RabbitMQ for real-time streaming          |
++------------------------------------------------------+
                     |
             DATA TRANSFORMATION LAYER
                     |                            
@@ -58,7 +58,7 @@ vi. Provide a batch processing code (in Python) that will send the readings in t
 +-------------------------------------------------+
 |   Tools                                         |
 | - Python (NumPy, Pandas)                        |
-| - PySpark for large-scale processing            |
+| - PySpark for large-scale processing (Hadoop)   |
 +-------------------------------------------------+
                   |
             STORAGE LAYER
