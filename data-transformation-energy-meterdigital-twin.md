@@ -82,7 +82,7 @@ vi. Provide a batch processing code (in Python) that will send the readings in t
 +-------------------------------------------------+
 |   Tools                                         |
 | - Python (Schedule/Crontab for automation)      |
-| - Cloud Storage (AWS S3, GCP Bucket)            |
+| - Cloud Storage (AWS S3, ADF, GCP Bucket)       |
 +-------------------------------------------------+
                    |
          BATCH PROCESSING & NOTIFICATION LAYER
