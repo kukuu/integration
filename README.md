@@ -12,6 +12,8 @@ Creating backend APIs (Application Programming Interfaces) that define the proto
 -  Data Transformation and Mapping:
 Converting data formats, structures, and representations to ensure compatibility between different systems. This may involve transforming data from one schema to another, mapping fields between systems, or performing data validation and cleansing. ORMs are versatile as middlewares in ETL tasks.
 
+...more: https://github.com/kukuu/managing-evolving-SCHEMA--contracts
+
 - Message Queuing and Event-Driven Integration: 
 Implementing messaging systems and event-driven architectures to enable asynchronous communication and decoupling between components. This involves setting up message queues, event brokers, or publish-subscribe mechanisms to handle communication between systems.
 
