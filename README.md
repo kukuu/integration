@@ -27,7 +27,7 @@ Implementing error handling mechanisms to capture and handle exceptions, failure
 Designing and conducting integration tests to ensure the seamless functioning and interoperability of integrated components. This involves testing data exchange, communication protocols, error handling, and overall system behavior.
 
 - Monitoring and Performance Optimization: 
-Setting up monitoring systems to track the performance, availability, and health of the integrated system. This includes monitoring API response times, identifying performance bottlenecks, and optimizing system performance through caching, load balancing, or other techniques.
+Setting up monitoring systems to track the performance, availability, and health of the integrated system. This includes monitoring API response times, identifying performance bottlenecks, and optimizing system performance through caching, load balancing, rate limiting or other techniques.
 
 - Blockchain
 https://github.com/kukuu/blockchain
