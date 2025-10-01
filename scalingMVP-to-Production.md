@@ -10,23 +10,23 @@
   - Code Audit & Debt Assessment: Conduct systematic review of current MVP to identify bottlenecks, anti-patterns, and technical debt
 
 
-ii. Modular Architecture: Break monolithic components into domain-driven microservices with clear boundaries
+  - Modular Architecture: Break monolithic components into domain-driven microservices with clear boundaries
 
 
-iii. Database Optimization: Implement proper indexing, query optimization, and connection pooling
+  - Database Optimization: Implement proper indexing, query optimization, and connection pooling
 
-iv. Caching Strategy: Introduce Redis for session management, API response caching, and frequently accessed data
+  - Caching Strategy: Introduce Redis for session management, API response caching, and frequently accessed data
 
 ## Applied AI - Pragmatic Integration
 
 - Internal Tooling:
 
-i. Document Intelligence: Implement RAG (Retrieval-Augmented Generation) for contract analysis and legal document processing
+  - Document Intelligence: Implement RAG (Retrieval-Augmented Generation) for contract analysis and legal document processing
 
 
-ii. AI-Powered Workflows: Use Claude/Cursor for code generation, bug detection, and automated testing
+  - AI-Powered Workflows: Use Claude/Cursor for code generation, bug detection, and automated testing
 
-iii. Smart Search: Semantic search across documents and user data
+  - Smart Search: Semantic search across documents and user data
 
 a. Cursor for rapid prototyping and refactoring
 
