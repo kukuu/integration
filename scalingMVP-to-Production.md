@@ -40,36 +40,36 @@ d. AI-generated API documentation
 
 - Strategic API Design:
 
-i. RESTful Standards: Consistent API patterns with proper versioning (/api/v1/)
+  - RESTful Standards: Consistent API patterns with proper versioning (/api/v1/)
 
-ii. GraphQL Layer: For complex data relationships and frontend flexibility
+  - GraphQL Layer: For complex data relationships and frontend flexibility
 
-iii. Webhook System: Real-time notifications for integrations
+  - Webhook System: Real-time notifications for integrations
 
-iv. API Gateway: Centralised authentication, rate limiting, and monitoring
+  - API Gateway: Centralised authentication, rate limiting, and monitoring
 
 
 ## Reliable Systems - Engineering Excellence
 
 - Production-Ready Infrastructure:
 
-i. Monitoring & Alerting: Implement Prometheus/Grafana for system metrics
+  - Monitoring & Alerting: Implement Prometheus/Grafana for system metrics
 
-ii. Error Tracking: Sentry for real-time error monitoring
+  - Error Tracking: Sentry for real-time error monitoring
 
-iii. Logging Strategy: Structured logging with correlation IDs
+  - Logging Strategy: Structured logging with correlation IDs
 
-iv. Health Checks: Comprehensive system health monitoring
+  - Health Checks: Comprehensive system health monitoring
 
 ## Helping the Team - Force Multiplier
 
 - Cross-Functional Enablement:
 
-i. Sales Team: CRM integrations, automated proposal generation, sales analytics
+  - Sales Team: CRM integrations, automated proposal generation, sales analytics
 
-ii. Legal Team: Contract analysis tools, compliance monitoring, document versioning
+  - Legal Team: Contract analysis tools, compliance monitoring, document versioning
 
-iii. Product Team: Feature flag system, A/B testing framework, user analytics
+  - Product Team: Feature flag system, A/B testing framework, user analytics
 
 ## Internal Tool Development:
 
