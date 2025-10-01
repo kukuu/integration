@@ -10,7 +10,7 @@ Here are some common integration backend tasks:
 Creating backend APIs (Application Programming Interfaces) that define the protocols, data formats, and operations required for communication between different systems. This involves designing and implementing RESTful APIs, SOAP APIs, GraphQL APIs, or other types of APIs based on the integration requirements. 
 
 -  Data Transformation and Mapping:
-Converting data formats, structures, and representations to ensure compatibility between different systems. This may involve transforming data from one schema to another, mapping fields between systems, or performing data validation and cleansing. ORMs are versatile as middlewares in ETL tasks.
+Converting data formats, structures, and representations to ensure compatibility between different systems. This may involve transforming data from one schema to another, schema evolutio/managing breaking changes, mapping fields between systems, or performing data validation and cleansing. ORMs are versatile as middlewares in ETL tasks.
 
 ...more: https://github.com/kukuu/managing-evolving-SCHEMA--contracts
 
