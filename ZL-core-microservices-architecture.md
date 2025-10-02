@@ -11,3 +11,12 @@
 - Rate limiting per service
 - Request/response logging
 ```
+2. USER SERVICE
+3. 
+- Stakeholder Needs:
+
+    - Sales: Customer management, lead tracking
+
+    - Legal: Consent management, GDPR compliance
+
+    - Product: User profiles, preferences
