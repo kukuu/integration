@@ -113,3 +113,7 @@
     - Reliability: < 0.1% error rate, automated recovery from failures
 
     - Team Velocity: 30% reduction in time-to-market for new features
+
+## Architecture
+
+https://github.com/kukuu/integration/blob/main/ZL-microservice-architecture.md
