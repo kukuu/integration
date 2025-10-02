@@ -27,3 +27,20 @@ POST /auth/register       # User registration
 GET  /users/{id}          # Profile management
 PUT  /users/{id}/consent  # Legal compliance
 ```
+**3. LEASE SERVICE (Core Domain)**
+
+- Stakeholder Needs:
+
+        - Sales: Lease extension pipeline management
+
+        - Legal: Contract templates, compliance rules
+
+        - Product: Lease calculation engine
+```
+
+# Endpoints:
+POST /leases/calculate    # Extension calculations
+GET  /leases/{id}         # Case management
+POST /leases/{id}/submit  # Legal submission
+
+```
