@@ -75,3 +75,17 @@ GET  /payments/{id}       # Status tracking
 POST /webhooks/stripe     # External integrations
 
 ```
+**6. NOTIFICATION SERVICE**
+
+- Stakeholder Needs:
+
+        - Sales: Customer follow-ups
+
+        - Legal: Deadline reminders
+
+        - Product: User engagement
+```
+# Endpoints:
+POST /notifications/send  # Email/SMS/Push
+GET  /notifications/templates # Comm templates
+```
