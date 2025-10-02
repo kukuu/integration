@@ -67,7 +67,7 @@ GET  /documents/templates # Legal templates
 
         - Legal: Audit trails, compliance
 
-  ```
+```
 
   # Endpoints:
 POST /payments/create     # Payment initiation
