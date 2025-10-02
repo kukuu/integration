@@ -53,7 +53,7 @@ POST /leases/{id}/submit  # Legal submission
         - Sales: Quick contract generation
 
         - Product: AI-powered insights
-  ```
+```
   # Endpoints:
 POST /documents/analyze   # AI lease analysis
 POST /documents/generate  # Contract generation
