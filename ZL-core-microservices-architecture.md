@@ -1,8 +1,8 @@
 # Core Microservices Architecture
 
-- API GATEWAY
+1. API GATEWAY
 
-    - Purpose: Single entry point, auth, rate limiting
+- Purpose: Single entry point, auth, rate limiting
 ```
 
 # Key Requirements:
