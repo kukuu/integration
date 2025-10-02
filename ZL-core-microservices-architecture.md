@@ -66,3 +66,12 @@ GET  /documents/templates # Legal templates
         - Sales: Payment tracking, commission calc
 
         - Legal: Audit trails, compliance
+
+  ```
+
+  # Endpoints:
+POST /payments/create     # Payment initiation
+GET  /payments/{id}       # Status tracking
+POST /webhooks/stripe     # External integrations
+
+```
