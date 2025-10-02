@@ -44,3 +44,18 @@ GET  /leases/{id}         # Case management
 POST /leases/{id}/submit  # Legal submission
 
 ```
+**4. DOCUMENT AI SERVICE**
+
+- Stakeholder Needs:
+
+        - Legal: Automated document analysis
+
+        - Sales: Quick contract generation
+
+        - Product: AI-powered insights
+  ```
+  # Endpoints:
+POST /documents/analyze   # AI lease analysis
+POST /documents/generate  # Contract generation
+GET  /documents/templates # Legal templates
+```
