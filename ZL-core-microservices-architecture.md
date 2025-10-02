@@ -59,3 +59,10 @@ POST /documents/analyze   # AI lease analysis
 POST /documents/generate  # Contract generation
 GET  /documents/templates # Legal templates
 ```
+**5. PAYMENT SERVICE**
+
+- Stakeholder Needs:
+
+        - Sales: Payment tracking, commission calc
+
+        - Legal: Audit trails, compliance
