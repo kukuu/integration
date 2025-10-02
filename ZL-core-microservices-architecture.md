@@ -1,6 +1,6 @@
 # Core Microservices Architecture
 
-1. API GATEWAY
+**1. API GATEWAY**
 
 - Purpose: Single entry point, auth, rate limiting
 ```
@@ -11,8 +11,8 @@
 - Rate limiting per service
 - Request/response logging
 ```
-2. USER SERVICE
-3. 
+**2. USER SERVICE**
+
 - Stakeholder Needs:
 
     - Sales: Customer management, lead tracking
