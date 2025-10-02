@@ -1,6 +1,6 @@
 # Microservice Architecture
 ```
-ZERO DOWN LEASE - SCALABLE MICROSERVICES ARCHITECTURE
+SCALABLE MICROSERVICES ARCHITECTURE
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                        API GATEWAY                             │
