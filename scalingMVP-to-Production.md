@@ -114,6 +114,22 @@
 
     - Team Velocity: 30% reduction in time-to-market for new features
 
-## Architecture
+## Related
 
-https://github.com/kukuu/integration/blob/main/ZL-microservice-architecture.md
+
+
+- Microservices Architecture: https://github.com/kukuu/integration/blob/main/ZL-microservice-architecture.md
+
+- Stakeholders Requirement: https://github.com/kukuu/integration/blob/main/ZL-stakeholders-requirement.md
+
+- Core Microservices Architecture: https://github.com/kukuu/integration/blob/main/ZL-core-microservices-architecture.md
+
+- Authentication & Communication: https://github.com/kukuu/integration/blob/main/ZL-authentication-communication.md
+
+- External API Integration: https://github.com/kukuu/integration/blob/main/ZL-external-API-integration.md
+
+- Data Architecture: https://github.com/kukuu/integration/blob/main/ZL-data-architecture.md
+
+- Deployment & Scaling: https://github.com/kukuu/integration/blob/main/ZL-deployment-and-scaling.md
+
+- Communication Protocols: https://github.com/kukuu/integration/blob/main/ZL-communications-protocols.md
